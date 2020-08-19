@@ -1,0 +1,227 @@
+
+    	@font-face
+    	{
+    		font-family: 'Metropolis-ExtraBold';
+    		src: url('Metropolis-ExtraBold.otf');
+    	}
+    	h1
+    	{
+    		
+    		font-family: 'Metropolis-ExtraBold';
+    	}
+
+    	.main{
+
+    		font-family: 'Metropolis-ExtraBold'
+    		/*background-image: linear-gradient(45deg, #191654, #43C6AC);*/
+    		background-color: #0B4F57;
+    		background-image: linear-gradient(45deg, rgb(74,148,159), #43C6AC);
+    		background-clip: text;
+    		text-fill-color: transparent;
+    		background-size: 100%;
+    		background-repeat: repeat;
+
+    		-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent; 
+ 			-moz-background-clip: text;
+  			-moz-text-fill-color: transparent;
+
+  			animation: title-text-animate-rev 0.75s ease forwards;
+
+    	}
+
+    	.main:hover
+    	{
+    		animation: title-text-animate 0.5s ease-in forwards;
+    	}
+
+    	@keyframes title-text-animate-rev {
+   				 0% {
+        				background-size: 650%;
+    				}
+    			40% {
+        				background-size: 650%;
+    				}
+    			100% {
+        				background-size: 100%;
+    				}	
+		}
+
+		@keyframes title-text-animate 
+		{
+			0% {
+       				background-size: 100%;
+    			}
+    		80% {
+        			background-size: 650%;
+    			}
+    		100% {
+        			background-size: 650%;
+    			}
+		}
+
+		.hero button {
+			background-image: linear-gradient(45deg, rgb(74,148,159), #43C6AC);
+			background-color: #0B4F57;
+			color: #FDF7E8 !important;
+
+		}
+		.hero button:hover 
+		{
+			/*background-image: linear-gradient(45deg, #0B4F57, #43C6AC);*/
+			background-color: rgb(74,148,159);
+		}
+		.hero button:focus
+		{
+			background-image: linear-gradient(45deg, #0B4F57, #43C6AC);
+			border-color: #0B4F57 !important;
+		}
+
+		.pushUpBtn {
+    		padding: 12px 24px;
+   			
+    		border-radius: 6px;
+    		transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		}
+
+		.pushUpBtn:hover {
+    		transform: translate3d(0px,-1px,0px);
+    		background-color: hsl(222, 100%, 92%);
+    		box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+		}
+
+
+    	.navbar-brand .navbar-item 
+    	{
+    		background: url('./images/icon.png') no-repeat center left;
+    		background-size: contain;
+    		width: 280px;
+
+    	}
+
+
+
+    	.navbar-dropdown {background-color: #FDF7E8 !important; }
+
+    	.activeNav, .navbar {background-color: #FDF7E8; text-align: center; font-family: 'Lexend Deca', sans-serif;}
+
+    	.is-main{
+    	   background-color:  #FDF7E8;
+
+    		
+    	}
+
+
+    	body, button, input,textarea  { font-family: 'Lexend Deca', sans-serif; }
+      body { overflow:hidden; }
+
+
+    	.intro p{ margin-left: 40px; margin-right: 40px; font-size: 20px; font-family: 'Lexend Deca', sans-serif;}
+
+    	a:hover {/*color: #EF2D56  !important;
+    	color: #FF6383 !important; */
+    	color: #EA526F !important; }
+
+    	.intro {background-color: #FDF7E8;}
+
+    	.borderLeftRight {
+   		 	display: inline-block;
+    		position: relative;
+    		
+ 		}
+  
+  		.borderLeftRight::after {
+		    content: '';
+		    position: absolute;
+		    width: 100%;
+		    transform: scaleX(0);
+		    height: 2px;
+		    bottom: 0;
+		    left: 0;
+		    background-color: #0B4F57;
+		    transform-origin: bottom right;
+		    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  		}
+  
+ 		.borderLeftRight:hover::after {
+		    transform: scaleX(1);
+		    transform-origin: bottom left;
+  		}
+  		
+  		.comm
+  		{
+  			background-color: rgb(74,148,159);
+  			
+  		}
+
+      .comm .level-left {border-color: #FDF7E8; border-style: solid; padding-right: 10px; }
+  		.contact, .contact h1 { background-color: #0B4F57; color: #FDF7E8; }
+  		.comm-title, .comm-subtitle, .comm p {color: #FDF7E8 !important;}
+
+  		.comm-subtitle { font-size: 1.2em; }
+      .level-item h1{font-size: 1.75em; margin-right: 10px; }
+      #about .subtitle, #end .subtitle {font-size: 20px;}
+      #about p, .comm p, #end p {font-size: 18px;}
+
+  		.achievements-text {color: #0B4F57 !important; }
+
+  		.is-128x128 {margin: auto; padding-top: 20px;}
+
+  		ul{padding-top: 40px;}
+
+  		hr{width: 60%; margin: 50px auto; background-color: hsl(0, 0%, 48%);  opacity: 50%}
+
+  		.testimonial, #about, #end {background-color: #FDF7E8; }
+
+  		
+  		.mySlides {display: none;  }
+  		.prev, .next {user-select: none; }
+  		strong {color: rgb(74,148,159) ; }
+
+  		input, textarea{ background-color: #FDF7E8 !important; }
+  		label {color: #FDF7E8 !important;}
+
+  		:focus {border-color: #A38560 !important;}
+
+  		.intro .title {color: #0B4F57 !important;}
+
+  		#submit { color: #FDF7E8; background-color: #AC753D; border: none; }
+  		#submit:hover{ background-color: #A38560; }
+
+  		.is-static
+        {
+          color: hsl(0, 0%, 21%) !important;
+          background-color: #FDF7E8 !important;
+
+        }
+
+        .icon { margin-left: 10px; margin-right: 10px; }
+
+        .social {color: #FDF7E8;}
+
+        .is-active {background-color: #FDF7E8;}
+
+        .is-active a:hover { background-color: #FDF7E8; }
+	      .media i { color: #0B4F57 !important; }
+
+      #press img {padding-top: 20px;}
+
+	@media(max-width: 767px) {
+  			.custom-columns {
+   				 flex-direction: column-reverse;
+   				 display: flex;
+  			}
+
+
+        
+
+      img [alt="up"] { align-content: right; }
+      img [alt="thrive"] {align-content: left;}}
+
+      
+
+      .section a {color: rgb(74,148,159); text-decoration: underline }
+
+
+
