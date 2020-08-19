@@ -122,6 +122,7 @@
     	a:hover {/*color: #EF2D56  !important;
     	color: #FF6383 !important; */
     	color: #EA526F !important; }
+	a:visited {color: #0B4F57; }
 
     	.intro {background-color: #FDF7E8;}
 
