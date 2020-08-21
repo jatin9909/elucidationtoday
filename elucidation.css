@@ -1,4 +1,5 @@
 
+    
     	@font-face
     	{
     		font-family: 'Metropolis-ExtraBold';
@@ -122,8 +123,6 @@
     	a:hover {/*color: #EF2D56  !important;
     	color: #FF6383 !important; */
     	color: #EA526F !important; }
-	
-	a:active { color: #0B4F57;}
 
     	.intro {background-color: #FDF7E8;}
 
@@ -163,14 +162,14 @@
 
   		.comm-subtitle { font-size: 1.2em; }
       .level-item h1{font-size: 1.75em; margin-right: 10px; }
-      #about .subtitle, #end .subtitle {font-size: 20px;}
-      #about p, .comm p, #end p {font-size: 18px;}
+      #about .subtitle, #end .subtitle, #services li{font-size: 20px;}
+      #about p, .comm p, #end p, {font-size: 18px;}
 
   		.achievements-text {color: #0B4F57 !important; }
 
   		.is-128x128 {margin: auto; padding-top: 20px;}
 
-  		ul{padding-top: 40px;}
+  		#achievements ul{padding-top: 40px;}
 
   		hr{width: 60%; margin: 50px auto; background-color: hsl(0, 0%, 48%);  opacity: 50%}
 
@@ -186,7 +185,8 @@
 
   		:focus {border-color: #A38560 !important;}
 
-  		.intro .title {color: #0B4F57 !important;}
+  		.intro .title, #career .title, #career .subtitle, #skills .title, #skills .subtitle, #mentors .title, #mentors .subtitle, #startup .title, #startup .subtitle, #faculty .title, #faculty .subtitle
+      {color: #0B4F57 !important;}
 
   		#submit { color: #FDF7E8; background-color: #AC753D; border: none; }
   		#submit:hover{ background-color: #A38560; }
@@ -223,7 +223,44 @@
 
       
 
-      .section a {color: rgb(74,148,159); text-decoration: underline }
+      .section a {color: rgb(74,148,159); text-decoration: underline; }
 
+      /*aside{
+        /*padding-top: 60px;
+        
+        line-height: 2;
+
+        padding-left: 10px;
+       
+
+         }*/
+      #services {
+        
+        text-decoration: none;
+
+
+
+        }
+
+      #services li{ line-height: 2; }
+      #nest { margin-left: 20px; }
+
+
+      .menu-label, .menu-list a {color: rgb(74,148,159) ; text-decoration: none; list-style-type: disc; }
+      .menu-list a:hover {background-color:  #FDF7E8; color: rgb(74,148,159) !important; text-decoration: underline; }
+
+      #career ul, #skills ul, #communication ul, #resume ul, #it ul, #psdt ul, #faculty ul, #mentors ul, #startup ul {list-style-type: disc !important; margin-left: 20px;}
+
+      .table {background-color: rgb(74,148,159); color: #FDF7E8;}
+      .table thead th, .table th {color: #FDF7E8; }
+
+      .tabs {background-color: white;}
+      
+      .tabs.is-toggle li.is-active a {background-color: #EA526F; border-color:#0B4F57; color: white; text-decoration: none;}
+      .tabs.is-toggle li.is-active a:hover { color: white !important; text-decoration: underline; }
+
+      
+      #inst_career, #inst_skill, #inst_comm, #inst_resume, #inst_it, #inst_mentor {display: none;}
+      
 
 
