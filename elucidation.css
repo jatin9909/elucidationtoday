@@ -169,7 +169,7 @@
 
   		.is-128x128 {margin: auto; padding-top: 20px;}
 
-  		#achievements ul{padding-top: 40px;}
+  		#achievements ul{padding-top: 40px !important;}
 
   		hr{width: 60%; margin: 50px auto; background-color: hsl(0, 0%, 48%);  opacity: 50%}
 
