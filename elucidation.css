@@ -185,7 +185,7 @@
 
   		:focus {border-color: #A38560 !important;}
 
-  		.intro .title, #career .title, #career .subtitle, #skills .title, #skills .subtitle, #mentors .title, #mentors .subtitle, #startup .title, #startup .subtitle, #faculty .title, #faculty .subtitle
+  		.intro .title, #career .title, #career .subtitle, #skills .title, #skills .subtitle, #mentor .title, #mentor .subtitle, #startup .title, #startup .subtitle, #faculty .title, #faculty .subtitle
       {color: #0B4F57 !important;}
 
   		#submit { color: #FDF7E8; background-color: #AC753D; border: none; }
