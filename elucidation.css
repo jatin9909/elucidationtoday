@@ -261,6 +261,6 @@
 
       
       #inst_career, #inst_skill, #inst_comm, #inst_resume, #inst_it, #inst_mentor {display: none;}
-      
+	#intro a {text-decoration: none !important;}
 
 
