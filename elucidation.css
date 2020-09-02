@@ -273,11 +273,9 @@ Abhishek CSS
 */
 
 /* to remove play button from phone*/
-*::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
+.diversity-gif video::-webkit-media-controls {
+    display:none !important;
 }
-
 
 .rest_content{
   display: none;
