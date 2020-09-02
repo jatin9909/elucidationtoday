@@ -271,6 +271,14 @@
 /*
 Abhishek CSS
 */
+
+/* to remove play button from phone*/
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+
 .rest_content{
   display: none;
 }
