@@ -357,12 +357,71 @@ Abhishek CSS
 /*  -webkit-filter: sepia(500%) hue-rotate(40deg) saturate(100%);*/
   filter: none;
 }
-
+.individual-detail{
+  margin-right: 10px;
+}
+.individual-detail .level-item{
+  margin-right: 0 !important;
+}
 .rm-padding-margin{
   margin: 0;
   padding: 0;
 }
-@media only screen and (max-width: 450px){
+
+.bg-plane{
+  background-image: url('images/paper_plane.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.diversity-gif{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-filter: invert(16%) sepia(22%) saturate(0%) hue-rotate(194deg) brightness(93%) contrast(84%);
+  filter: invert(16%) sepia(22%) saturate(0%) hue-rotate(194deg) brightness(93%) contrast(84%);
+}
+.diversity-gif:hover{
+  filter: none;
+  -webkit-filter: none;
+}
+.diversity-gif video{
+  height: 320px;
+  width: 320px;
+}
+.diversity-text{
+  display: inline-block;
+  vertical-align: middle;
+  margin:0 50px;
+  color: #FDF7E8;
+  font-size: 48px;
+}
+@media only screen and (max-width: 1100px){
+  .diversity-gif{
+    display: block;
+    text-align: center;
+  }
+  .diversity-text{
+    display: block;
+    margin-top:10px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 900px){
+  .bg-plane{
+    background-image: url('images/paper_plane_2.png');
+  }
+}
+@media only screen and (max-width: 767px){
+  .diversity-gif video{
+    height: 280px;
+    width: 280px;
+  }
+  .diversity-text{
+    font-size: 32px;
+  }
+  .bg-plane{
+    background-image: none;
+  }
 
   .level.is-mobile{
     display:block;
@@ -382,6 +441,16 @@ Abhishek CSS
     transform: rotate(0deg);
     transform-origin: bottom left;
     box-shadow: none;
+  }
+
+}
+@media only screen and (max-width: 450px){
+  .diversity-gif video{
+    height: 250px;
+    width: 250px;
+  }
+  .diversity-text{
+    font-size: 24px;
   }
 
 }
