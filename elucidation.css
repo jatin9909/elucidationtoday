@@ -91,15 +91,14 @@
     		box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 		}
 
+    .logo{
+      padding: 0px 0px 0px 20px;
+    }
 
-    	.navbar-brand .navbar-item 
-    	{
-    		background: url('./images/icon.png') no-repeat center left;
-    		background-size: contain;
-    		width: 280px;
-        cursor: default;
-    	}
-
+    .logo img{
+      height: 48px;
+      max-height: none;
+    }
 
 
     	.navbar-dropdown {background-color: #FDF7E8 !important; }
@@ -274,13 +273,13 @@ Abhishek CSS
 
 
 /* REMOVE PLAY BUTTON */
-/* to remove play button from phone*/
+/* to remove play button from phone
 *::-webkit-media-controls-panel {
   display: none!important;
  -webkit-appearance: none;
 }
 
-/* Old shadow dom for play button */
+/* Old shadow dom for play button /
 
 *::--webkit-media-controls-play-button {
   display: none!important;
@@ -289,7 +288,7 @@ Abhishek CSS
 
 /* New shadow dom for play button */
 
-/* This one works */
+/* This one works /
 
 *::-webkit-media-controls-start-playback-button {
   display: none!important;
@@ -353,6 +352,7 @@ Abhishek CSS
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  background-color: transparent;
 }
 /*#go-to-top::after {
   content: "ABCD";
@@ -371,6 +371,7 @@ Abhishek CSS
   opacity: 1;
   visibility: visible;
 }
+* {-webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 /* Styles for the content section */
 .map-container{
