@@ -265,8 +265,6 @@
 	#intro a {text-decoration: none !important;}
 
 
-
-
 /*
 Abhishek CSS
 */
@@ -354,14 +352,7 @@ Abhishek CSS
   z-index: 1000;
   background-color: transparent;
 }
-/*#go-to-top::after {
-  content: "ABCD";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}*/
+
 #go-to-top:hover {
   cursor: pointer;
 }
