@@ -33,8 +33,9 @@
   		<div class="container">
 	  		<div class="navbar-brand">
 	  			<a class="navbar-item logo" href="index.html">
-	  				<img src="images/icon.png">
-	  			</a> 
+	  				<img src="images/icon.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+	  				<img src="images/et_watermark.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+	  			</a>
 	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
 		      		<span></span>
 		      		<span></span>
@@ -319,6 +320,9 @@
 				<div class="column">
 					<a href="https://www.facebook.com/watch/?v=688796961976575">
 						<img src="images/indiatoday.jpeg" alt="India Today Cover" width="50%" height="auto">
+						<!--div class="overlay">
+    						<div class="text">India Today Facebook Page</div>
+  						</div-->
 					</a>
 				</div>
 				<div class="column">
