@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="icon" href="./images/icon.png">  
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <style type="text/css">
+    	@font-face
+    	{
+    		font-family: 'Metropolis-ExtraBold';
+    		src: url('Metropolis-ExtraBold.otf');
+    	}
+    	h1
+    	{
+    		
+    		font-family: 'Metropolis-ExtraBold';
+    	}
+
+    	.main{
+
+    		font-family: 'Metropolis-ExtraBold'
+    		/*background-image: linear-gradient(45deg, #191654, #43C6AC);*/
+    		background-color: #0B4F57;
+    		background-image: linear-gradient(45deg, rgb(74,148,159), #43C6AC);
+    		background-clip: text;
+    		text-fill-color: transparent;
+    		background-size: 100%;
+    		background-repeat: repeat;
+
+    		-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent; 
+ 			-moz-background-clip: text;
+  			-moz-text-fill-color: transparent;
+
+  			animation: title-text-animate-rev 0.75s ease forwards;
+
+    	}
+
+    	.main:hover
+    	{
+    		animation: title-text-animate 0.5s ease-in forwards;
+    	}
+
+    	@keyframes title-text-animate-rev {
+   				 0% {
+        				background-size: 650%;
+    				}
+    			40% {
+        				background-size: 650%;
+    				}
+    			100% {
+        				background-size: 100%;
+    				}	
+		}
+
+		@keyframes title-text-animate 
+		{
+			0% {
+       				background-size: 100%;
+    			}
+    		80% {
+        			background-size: 650%;
+    			}
+    		100% {
+        			background-size: 650%;
+    			}
+		}
+
+		.hero button {
+			background-image: linear-gradient(45deg, rgb(74,148,159), #43C6AC);
+			background-color: #0B4F57;
+			color: #FDF7E8 !important;
+
+		}
+		.hero button:hover 
+		{
+			/*background-image: linear-gradient(45deg, #0B4F57, #43C6AC);*/
+			background-color: rgb(74,148,159);
+		}
+		.hero button:focus
+		{
+			background-image: linear-gradient(45deg, #0B4F57, #43C6AC);
+			border-color: #0B4F57 !important;
+		}
+
+		.pushUpBtn {
+    		padding: 12px 24px;
+   			
+    		border-radius: 6px;
+    		transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		}
+
+		.pushUpBtn:hover {
+    		transform: translate3d(0px,-1px,0px);
+    		background-color: hsl(222, 100%, 92%);
+    		box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+		}
+
+
+    	.navbar-brand .navbar-item 
+    	{
+    		background: url('./images/icon.png') no-repeat center left;
+    		background-size: contain;
+    		width: 400px;
+
+    	}
+
+    	.navbar-dropdown {background-color: #FDF7E8; }
+
+    	.activeNav, .navbar {background-color: #FDF7E8; text-align: center; font-family: 'Lexend Deca', sans-serif;}
+
+    	.is-main{
+    	   background-color:  #FDF7E8;
+
+    		
+    	}
+
+
+    	body, button, input,textarea  { font-family: 'Lexend Deca', sans-serif; }
+
+    	p{ margin-left: 40px; margin-right: 40px; font-size: 20px; font-family: 'Lexend Deca', sans-serif;}
+
+    	a:hover {/*color: #EF2D56  !important;
+    	color: #FF6383 !important; */
+    	color: #EA526F !important; }
+
+    	.intro {background-color: #FDF7E8;}
+
+    	.borderLeftRight {
+   		 	display: inline-block;
+    		position: relative;
+    		
+ 		}
+  
+  		.borderLeftRight::after {
+		    content: '';
+		    position: absolute;
+		    width: 100%;
+		    transform: scaleX(0);
+		    height: 2px;
+		    bottom: 0;
+		    left: 0;
+		    background-color: #0B4F57;
+		    transform-origin: bottom right;
+		    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  		}
+  
+ 		.borderLeftRight:hover::after {
+		    transform: scaleX(1);
+		    transform-origin: bottom left;
+  		}
+  		
+  		.comm
+  		{
+  			background-color: rgb(74,148,159);
+  			
+  		}
+  		.contact { background-color: #0B4F57;}
+  		.comm-title, .comm-subtitle {color: #FDF7E8 !important;}
+
+  		.comm-subtitle { font-size: 1.2em; }
+
+  		.achievements-text {color: #0B4F57 !important; }
+
+  		.is-128x128 {margin: auto; padding-top: 20px;}
+
+  		ul{padding-top: 40px;}
+
+  		hr{width: 60%; margin: 50px auto; background-color: hsl(0, 0%, 48%);  opacity: 50%}
+
+  		.testimonial {background-color: #FDF7E8; }
+
+  		
+  		.mySlides {display: none;  }
+  		.prev, .next {user-select: none; }
+  		strong {color: rgb(74,148,159) ; }
+
+  		input, textarea{ background-color: #FDF7E8 !important; }
+  		label {color: #FDF7E8 !important;}
+
+  		:focus {border-color: #A38560 !important;}
+
+  		.intro .title {color: #0B4F57 !important;}
+
+  		#submit { color: #FDF7E8; background-color: #AC753D; border: none; }
+  		#submit:hover{ background-color: #A38560; }
+
+  		.is-static
+        {
+          color: hsl(0, 0%, 21%) !important;
+          background-color: #FDF7E8 !important;
+
+        }
+
+        .icon { margin-left: 10px; margin-right: 10px; }
+
+        .social {color: #FDF7E8;}
+
+        .is-active, .is-active a:hover { background-color: #FDF7E8; }
+	    .media i { color: #0B4F57 !important; }
+
+	@media(max-width: 767px) {
+  			.custom-columns {
+   				 flex-direction: column-reverse;
+   				 display: flex;
+  			}
+
+    </style>
+    <title>Elucidation Today</title>
+  </head>
+  <body>
+  	<nav class="navbar is-fixed-top is-transparent">
+  		<div class="container">
+	  		<div class="navbar-brand">
+	  			<a class="navbar-item" href="#">
+	  				
+	  			</a> 
+	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
+		      		<span></span>
+		      		<span></span>
+		      		<span></span>
+	    		</span>
+	  		</div>
+	  		<div class="navbar-menu" id="navbarMenuHero">
+	  			<div class="navbar-end">
+	  				<a class="navbar-item">Elucidation Today</a>
+	  				<!--<a class="navbar-item">About</a>
+
+		 			<div class="navbar-item has-text-centered has-dropdown is-hoverable">
+		 				<a class="navbar-link is-arrowless">Services</a>
+		 				<div class="navbar-dropdown is-boxed is-right">
+		 					<a class="navbar-item">Skill Development</a>
+		 					<a class="navbar-item">Career Awarenes</a>
+		 					<a class="navbar-item">Mentorship</a>
+		 					<a class="navbar-item">Startup Guidance</a>
+		 					<a class="navbar-item">Faculty Training</a>
+
+
+		 				</div>
+		 			</div>-->
+
+
+		 			
+		   			<a class="navbar-item" href="#contact">Contact</a>
+		 			
+	 		    </div>
+
+  			</div>
+  		</div>
+
+  		
+  		
+	</nav>
+	<!--END NAVBAR-->
+	<section class="hero is-medium is-main">
+		<div class="hero-body">
+			<div class="columns is-vcentered">
+				<div class="column is-offset-1">
+					<h1 class="main title" data-aos="fade-zoom-in"
+     									   data-aos-easing="ease-in-back"
+     									   data-aos-delay="300"
+     									   data-aos-offset="0">
+     									Launch your career today with expert help and curated skills.</h1>
+				
+			
+					<!--<button class="button pushUpBtn is-rounded">View Upcoming Workshops</button>-->
+				</div>
+				
+				<div class="column illust">
+					<figure class="image" data-aos="flip-left">
+						<img src="./images/vision-bw.png" width="75%">
+					</figure>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END HERO-->
+	<section class="section intro">
+		<div class="container has-text-centered">
+			<div class="column is-8 is-offset-2">
+			<h1 class="title" data-aos="fade-up">
+				We're committed to making you employable, aware and skilled.
+			</h1>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="container has-text-centered" data-aos="fade-up">
+			<div class="columns is-vcentered">
+				<div class="column" >
+					<figure class="image">
+						<img src="./images/meditation-bw.png">
+					</figure>
+				</div>
+				<div class="column" >
+					<h1 class="title borderLeftRight">
+						Find your calling.
+					</h1>
+					<p>
+						If questions about your career and purpose elude you, you've come to the right place. There are several different paths and courses to traverse, and we're here to elucidate them for you. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		
+		<div class="container has-text-centered" data-aos="fade-up">
+			<div class="columns is-vcentered custom-columns">
+				
+				<div class="column">
+					<h1 class="title borderLeftRight">
+						It's grooming time!
+					</h1>
+					<p>
+						Ready to step into the real world? Give your skills and personality an edge through interview prep and workshops on resume building, communication, problem solving, and more.</p>
+				</div>
+				<div class="column">
+					<figure class="image">
+						<img src="./images/success-bw.png">
+					</figure>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		<div class="container has-text-centered" data-aos="fade-up">
+			<div class="columns is-vcentered">
+				<div class="column">
+					<figure class="image">
+						<img src="./images/idea BW.png">
+					</figure>
+				</div>
+				<div class="column">
+					<h1 class="title borderLeftRight">
+						Be your own boss.
+					</h1>
+					<p>
+						We offer startup guidance every step of the way - from ideation to implementation. We also find you seasoned industry mentors and help you curate the right kind of team. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		
+		<div class="container has-text-centered" data-aos="fade-up">
+			<div class="columns is-vcentered custom-columns">
+				
+				<div class="column">
+					<h1 class="title borderLeftRight">
+						Be that favourite teacher!
+					</h1>
+					<p>
+						Invite us to your school or college for custom faculty training sessions, guaranteed to enhance student performance.</p>
+				</div>
+				<div class="column">
+					<figure class="image">
+						<img src="./images/teaching-bw.png">
+					</figure>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+	<!--<section class="hero is-medium comm has-text-centered">
+ 		 <div class="hero-body">
+    		<div class="container">
+     		 <h1 class="title comm-title">
+       			 Up Next: Communication Skills Workshop
+     		 </h1>
+      		<h2 class="subtitle comm-subtitle">
+        		Sign up for further details.
+     		</h2>
+   			</div>
+  			</div>
+	</section>-->
+
+	<section class="section has-background-white">
+		<div class="container has-text-centered" data-aos="fade-up">
+			<div class="column is-10 is-offset-1">
+			<h1 class="title achievements-text is-size-4">
+				We've successfully conducted sessions in the following prestigious institutions
+			</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="columns has-text-centered">
+				<div class="column" data-aos="fade-up-right">
+					<figure class="image is-128x128">
+						<img src="./images/DU.png" alt="University of Delhi">
+					</figure>
+
+					<ul>
+						<li>Hansraj College</li>
+						<li>Lady Sri Ram College</li>
+						<li>Daulat Ram College</li>
+						<li>Kirori Mal College</li>
+					</ul>
+				</div>
+				<div class="column" data-aos="fade-up">
+					<figure class="image is-128x128">
+						<img src="./images/MGU.png" alt="Mahatma Gandhi University">
+					</figure>
+					<ul>
+						<li>De Paul Institute of Science & Technology, Angamaly</li>
+					</ul>
+				</div>
+				<div class="column" data-aos="fade-up-left">
+					<figure class="image is-128x128">
+						<img src="./images/Seal_Panjab_University.png" alt="Panjab University">
+					</figure>
+					<ul>
+						<li>Khalsa College for Women, Ludhiana</li>
+						<li>Guru Nanak Khalsa College of Women, Ludhiana</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<section class="section testimonial" data-aos="fade-up">
+		<div class="container has-text-centered">
+			<h1 class="title">Students Like Us.</h1>
+		</div>
+		<div class="container">
+			<div class="column is-8 is-offset-2">
+				<div class="box">
+					<article class="media">
+						<div class="media-left is-vcentered">
+							<a class="prev" onclick="plusSlides(-1)">
+								<i class="fas fa-chevron-left"></i>
+							</a>
+						</div>
+						<div class="media-content">
+							<div class="mySlides">
+								<div class="content">
+									 "I was very confused regarding what to do next. Elucidation Today provided me awareness regarding the options available and helped me immensely by connecting me with my industry mentor. I never knew that my career options could be this vast."
+								</div>
+								<div class="level is-mobile">
+									<div class="level-left"></div>
+									<div class="level-right">
+										<p class="level-item is-size-6"><strong>Pooja</strong>, University of Delhi</p>
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="mySlides">
+								<div class="content">
+									"I am very thankful to Elucidation for clarifying my doubts. They helped me in developing the mindset of an entrepreneur and now I am confident enough that I can run my own firm. I still keep on getting continued guidance from them."
+								</div>
+								<div class="level is-mobile">
+									<div class="level-left"></div>
+									<div class="level-right">
+										<p class="level-item is-size-6"><strong>Priya</strong>, Panjab University</p>
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="mySlides">
+								<div class="content">
+									"Connecting with Elucidation Today means having access to their unimaginably vast network of industry experts, professionals and mentors. From resume building to helping me recognise my passion, I owe it all to them."
+								</div>
+								<div class="level is-mobile">
+									<div class="level-left"></div>
+									<div class="level-right">
+										<p class="level-item is-size-6"><strong>Rohit</strong>, University of Delhi</p>
+										
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="media-right has-text-dark">
+							<a class="prev" onclick="plusSlides(1)">
+								<i class="fas fa-chevron-right"></i>
+							</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="section contact" id="contact" data-aos="fade-in">
+		<div class="container has-text-centered">
+			<h1 class="title comm-title">Get in Touch</h1>
+			<h2 class="comm-subtitle">We're here to help students through thick and thin. <b>We do not promote any company or service through our sessions.</b></h2>
+		</div>
+		<br>
+		<div class="column is-4 is-offset-4">
+			<form name="submit-to-google-sheet" action=" " onsubmit="return Contact()" method="post">
+              <fieldset>
+                 <div class="field">
+                    <label class="label">Name</label>
+                    	<div class="control">
+                      		<input class="input" id="namefield" type="text" name="Name" placeholder=" " required>
+                    	</div>
+                    
+	             </div>
+	             <div class="field"><!--email: validate-->
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                      <input type="email" name="Email" id="email" class="input" placeholder="example@mail.com" value=" " required>
+                      <span class="icon is-small is-left">
+                       <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                    
+                  </div>
+                  <div class="field">
+                    <label class="label">Educational Institution</label>
+                    	<div class="control">
+                      		<input class="input" id="edu" type="text" name="School" placeholder=" " required>
+                    	</div>
+                    
+	             </div>
+	             <div class="field">
+                    <label class="label">Area(s) of Interest</label>
+                    	<div class="control">
+                      		<input class="input" id="aoi" type="text" name="Interest" placeholder="e.g., career awareness, humanities, entrepreneurship">
+                    	</div>
+
+                    
+	             </div>
+	             <div class="field">
+                    <label class="label">Enter your query/comments here.</label>
+                  		<div class="control">
+                       		<textarea id="q" class="textarea" placeholder="Type your message here" name="Message" required></textarea>
+
+                    	</div>
+                </div>
+              </fieldset>  
+              <br>
+              <div class="field">
+                <div class="control">
+                  <button class="button pushUpBtn" type="submit" id="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+           </div>
+
+
+
+
+	</section>
+
+	<footer class="footer has-background-dark" id="contact" data-aos="fade-in">
+		<div class="columns is-vcentered">
+			<div class="column is-4 is-offset-4 has-text-centered">
+				
+				<a class="social" href="https://www.instagram.com/elucidation_today/" alt="@elucidation_today">
+					<span class="icon">
+						<i class="fab fa-instagram fa-2x"></i>
+					</span>
+				</a>
+				<a class="social" href="mailto:elucidationtoday@gmail.com" alt="mailto:elucidationtoday@gmail.com">
+					<span class="icon">
+						<i class="far fa-envelope fa-2x"></i>
+					</span>
+				</a>
+				<a class="social" href="https://www.linkedin.com/company/elucidation-today" alt="linkedin">
+					<span class="icon">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</span>
+				</a>
+				
+				
+
+			</div>
+		</div>
+		</footer>
+
+
+  </body>
+
+  <script>
+
+
+  	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  
+	  slides[slideIndex-1].style.display = "block";  
+	  
+	}
+
+	AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+
+
+    
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdpywemDQsYFRdhUYuX34aL-ITijZgroELGOh6LpstD354RK4/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+            e.preventDefault() 
+
+
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+  	
+   (function()
+      {
+      	var burger=document.querySelector('.burger');
+      	var nav=document.querySelector('#'+burger.dataset.target);
+
+      	burger.addEventListener('click', function()
+      	{
+      		burger.classList.toggle('is-active');
+      		nav.classList.toggle('is-active');
+      	});
+      })();
+
+
+
+	function resetForm(){
+
+                $("form")[0].reset();
+                $("fieldset").removeAttr("disabled");
+                $("#submit").removeClass("is-static")
+                $("#submit").text("Submit")
+
+              }
+
+    $(function()
+      {
+        $("form").submit(function()
+            {
+              $("#submit").text("Success")
+                .addClass("is-static");
+              $("fieldset").attr("disabled","disabled");  
+              
+              setTimeout(resetForm, 2000);
+
+
+            
+
+              
+
+
+            }
+
+
+          )
+      });
+
+
+
+
+
+  </script>
+</html>

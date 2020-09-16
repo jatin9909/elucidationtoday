@@ -1,0 +1,129 @@
+.left-col{
+    background-color: rgb(40, 165, 165);
+     color: white;
+     vertical-align: middle;
+     text-align: center;
+     
+}
+
+.right-col{
+    background-color: rgb(21, 75, 85); 
+    color: white; 
+    padding: auto;
+}
+
+.date-col{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    z-index: 100;
+}
+
+.over-col{
+    background-color: rgb(19, 173, 173); 
+    height: 90px !important;
+    margin-top: -20px;
+    min-width: 50px;
+}
+.over-col p{
+    padding-top: 4px;
+    font-size: 50px;
+    color: white;
+}
+
+.date-text{
+    margin-bottom: 3rem;
+}
+
+.skill-box{
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 3rem;
+    text-align: center;
+    height: 64px;
+    overflow: auto;
+    font-size: 1.8vh;
+    vertical-align: middle;
+}
+
+.count-box{
+    border-radius: 100%;
+    background-color: rgb(31, 175, 168);
+    font-size: 100%;
+    padding: 16px;
+
+}
+
+.bg-img{
+    background-image: url('./images/workshop/Picture1.png');
+background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  
+}
+
+.bg-img-skills{
+    background-image: url('./images/workshop/Picture2.png');
+    background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 10px;
+}
+
+.collaborators-project{
+    background-color: rgb(18, 147, 156);
+    color: white;
+    padding: auto;
+}
+.collab-link{
+    margin-bottom: 2rem;
+    overflow: auto;
+    font-size: 2vh;
+}
+
+.img-left{
+    background-image: url('./images/workshop/Picture4.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px;
+}
+.img-right{
+    background-image: url('./images/workshop/Picture3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 767px){
+    .parent-col{
+        margin-left: 10%;
+        margin-right: 15%;
+    }
+  }
+
+  @media only screen and (min-width: 600px){
+
+    .content{
+        margin-left: 34% !important;
+    }
+  }
+
+  @media only screen and (max-width: 464px){
+      .left-col{
+          font-size: 3vw;
+         
+      }
+      .right-col{
+        font-size: 3vw;
+    }
+    .collab-link{
+        font-size: 1vh;
+    }
+
+    .skill-box{
+        font-size: 2.5vw;
+    }
+
+  }
