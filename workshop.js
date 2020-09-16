@@ -137,6 +137,21 @@
   			alert("Please enter your university");
   			return ["Error"];
   		}
+      if($('[name="working"]:checked').length > 0){
+        if (!$('#domain').val()){
+          alert("Please tell us the domain you work in");
+          return ["Error"];
+        }
+        if (!$('#company').val()){
+          alert("Please tell us your company");
+          return ["Error"];
+        }
+        if (!$('#workex').val()){
+          alert("How much work experience do you have in "+($('#domain').val()));
+          return ["Error"];
+        }
+      }
+
   		return true;
   	}
 
