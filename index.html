@@ -13,8 +13,9 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+    <meta name="title" content="Your Skill Salon • Elucidation Today">
+    <meta name="keywords" content="skill development, employable, entrepreneurial mindset, elucidation today, featured on front page, india today, new education policy, education startup, edtech startup">
+    <meta name="description" content="Helping the youth be more aware of the opportunities that are in front of them. Promoting skill development and career mentorship for the new force.">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 	<link rel="icon" href="./images/icon.png">  
@@ -26,15 +27,16 @@
 
 
     
-    <title>Elucidation Today</title>
+    <title>Your Skill Salon • Elucidation Today</title>
   </head>
   <body>
   	<nav class="navbar is-fixed-top is-transparent">
   		<div class="container">
 	  		<div class="navbar-brand">
 	  			<a class="navbar-item logo" href="index.html">
-	  				<img src="images/icon.png">
-	  			</a> 
+	  				<img src="images/icon.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+	  				<img src="images/et_watermark.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+	  			</a>
 	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
 		      		<span></span>
 		      		<span></span>
@@ -185,7 +187,7 @@
 						Be that favourite teacher!
 					</h1>
 					<p>
-						Invite us to your school or college for custom <a href="Services#faculty"><strong>faculty training</strong></a> sessions, guaranteed to enhance student performance.</p>
+						Invite us to your school or college for custom <a href="services.html#faculty"><strong>faculty training</strong></a> sessions, guaranteed to enhance student performance.</p>
 				</div>
 				<div class="column">
 					<figure class="image">
@@ -332,6 +334,9 @@
 				<div class="column">
 					<a href="https://www.facebook.com/watch/?v=688796961976575">
 						<img src="images/indiatoday.jpeg" alt="India Today Cover" width="50%" height="auto">
+						<!--div class="overlay">
+    						<div class="text">India Today Facebook Page</div>
+  						</div-->
 					</a>
 				</div>
 				<div class="column">
