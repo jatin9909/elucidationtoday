@@ -712,3 +712,17 @@ Abhishek CSS
   }
 
 }
+
+/*Kamal's css*/
+#more-link{
+  margin-left: 16px;
+}
+@media only screen and (max-width: 1024px){
+  #more-link{
+    display: none;
+    margin-left: -8px;
+  }
+}
+#more-link:hover{
+  color:  #EA526F !important;
+}
