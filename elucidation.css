@@ -328,6 +328,19 @@ Abhishek CSS
   transform: rotate(0deg);
 }
 
+.service-image{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0)
+  
+}
+.large-image{
+  width: fit-content;
+  height: auto;
+  margin: auto;
+}
 
 
 #go-to-top {
@@ -352,7 +365,14 @@ Abhishek CSS
   z-index: 1000;
   background-color: transparent;
 }
-
+/*#go-to-top::after {
+  content: "ABCD";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}*/
 #go-to-top:hover {
   cursor: pointer;
 }
@@ -449,6 +469,89 @@ Abhishek CSS
 #logo, #logo_full{
   transition: height 0.4s;
 }
+/* Workshop form */
+
+.workshop-form{
+  background: #FDF7E8;
+}
+.steps .steps-content{
+  padding: 50px;
+  background: #0B4F57;
+  margin-bottom: 0;
+}
+.workshop-form textarea{
+  height:140px;
+}
+.step-content{
+  background: #0B4F57;
+}
+.field-body input{
+}
+.field-label{
+  margin: 15px 0;
+}
+.field-label label{
+  text-align: center;
+}
+.add-ons .field-label label{
+  text-align: left;
+}
+.field-body .control{
+  text-align: center;
+}
+.steps-actions{
+  padding: 50px 0;
+}
+.steps-actions .steps-action a{
+  color: #FFF;
+  background: #000000b3;
+}
+.steps-actions .steps-action a:focus{
+  color: #FFF;
+}
+.steps-actions .steps-action a[disabled]{
+  color: #000000b3;
+}
+.working-field{
+  margin: 30px 0;
+}
+.working-block, .submit-block{
+  display: none;
+}
+.submit-block button{
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+.tick-boxes-block .field label{
+  margin-right: 10px;
+} 
+.tick-boxes-block .title-label{
+  display: block;
+  margin: 20px 0;
+  text-decoration: underline;
+}
+.datepicker{
+  background: #FFF;
+  border-radius:5px;
+}
+.final-response{
+  color:#FFF;
+}
+.workshop-title{
+  padding: 102px 0;
+  background: #FDF7E8;
+}
+.workshop-title .title{
+  font-size: 40px;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+}
+.file-cta, .file-name{
+  white-space: unset;
+  height:auto;
+  max-width: unset;
+}
+/* Workshop form */
 @media only screen and (max-width: 1100px){
   .diversity-gif{
     display: block;
