@@ -433,6 +433,107 @@ Abhishek CSS
   color: #FDF7E8;
   font-size: 48px;
 }
+/* blogs */
+    .rtb-col{
+      padding: 0 !important;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+    .rtb-col div{
+      background: #FFF;
+      margin:0 10px;
+    }
+    .rtb-col .excerpt, .rtb-col .author, .rtb-col .post-title, .rtb-col .read-more{
+      padding: 5px 10px;
+    }
+    .rtb-col .author{
+      text-align: left;
+    }
+    .rtb-col .post-date{
+      z-index: 1;
+      left:0;
+    }
+    .rtb-col .excerpt{
+      max-height: 150px;
+    }
+    .rtb-col .excerpt h3, .rtb-col .excerpt figure{
+      display: none;
+    }
+    .rtb-col .post-image{
+      -webkit-clip-path: polygon(100% 0, 100% 88%, 52% 100%, 0 88%, 0 0);
+      clip-path: polygon(100% 0, 100% 88%, 52% 100%, 0 88%, 0 0);
+    }
+    #post-container.rtb-inline .rtb-close {
+      display: inline;
+      position: absolute;
+      right: 0;
+      top:-60px;
+      margin-right: 20px;
+      font-size: 22px;
+      color: #4a949f;
+      font-weight: 700;
+    }
+    #post-container.rtb-inline .rtb-close span{
+      visibility: hidden;
+      position: relative;
+    }
+    #post-container.rtb-inline .rtb-close span:after{
+      visibility: visible;
+      position: absolute;
+      cursor: pointer;
+      right: 10px;
+      width: max-content;
+      content: 'close \00D7';
+      font-size: 28px;
+      font-style: normal;
+    }
+    #post-container .container h3{
+      display: none;
+    }
+    #post-container .post-author{
+      text-align: left;
+    }
+    .blogs-heading{
+      padding: 100px 0 50px 0;
+      text-align: center;
+    }
+    .blogs-heading h1{
+      font-size: 29px;
+    }
+    .all-blogs{
+      font-family: 'Merriweather', serif;
+      background-color: #FDF7E8;
+      font-size: 22px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .all-blogs a{
+      color: #4a949f;
+    }
+    .blog-section{
+      background: #FDF7E8;
+      display: block;
+      padding: 10px;
+    }
+    .rtb-pagination-container .row a.pager {
+        border: 0;
+        background: #EA526F;
+        padding: 3px 20px;
+        color: #FFF;
+        border-radius: 300px;
+    }
+    .source-link{
+      display: block;
+      max-width: unset !important;
+      flex: unset !important;
+      margin: 30px 0;
+    }
+    .rtb-pagination-container a[href="#"]{
+      color: #111;
+    }
+    /* blogs */
+
+
 /*
 .overlay {
   position: absolute;
