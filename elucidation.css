@@ -265,11 +265,6 @@
 	#intro a {text-decoration: none !important;}
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 6a818b41c412dfe27f2310e8188dc84b4d1a5232
 /*
 Abhishek CSS
 */
@@ -350,7 +345,7 @@ Abhishek CSS
 
 #go-to-top {
   display: inline-block;
-  background-image: url('images/top.svg');
+  background-image: url('images/top.png');
   -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
   width: 50px;
@@ -370,7 +365,6 @@ Abhishek CSS
   z-index: 1000;
   background-color: transparent;
 }
-<<<<<<< HEAD
 /*#go-to-top::after {
   content: "ABCD";
   font-weight: normal;
@@ -379,9 +373,6 @@ Abhishek CSS
   line-height: 50px;
   color: #fff;
 }*/
-=======
-
->>>>>>> 6a818b41c412dfe27f2310e8188dc84b4d1a5232
 #go-to-top:hover {
   cursor: pointer;
 }
@@ -441,6 +432,42 @@ Abhishek CSS
   margin:0 50px;
   color: #FDF7E8;
   font-size: 48px;
+}
+/*
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  /*background-color: #4a949f;
+}
+.container_it{
+    position: relative;
+}
+.container_it:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #FDF7E8;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+*/
+#logo_full{
+  height: 0;
+}
+#logo, #logo_full{
+  transition: height 0.4s;
 }
 /* Workshop form */
 
@@ -583,8 +610,4 @@ Abhishek CSS
     font-size: 24px;
   }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6a818b41c412dfe27f2310e8188dc84b4d1a5232
