@@ -164,15 +164,15 @@
   			alert("Please tell us why do you want to enroll in SNAP");
   			return ["Error"];
   		}
-  		if (!$('#fileContent').val()){
+  		/*if (!$('#fileContent').val()){
   			alert("Please upload any of your writing sample here");
   			return ["Error"];
-  		}
+  		}*/
   		return true;
   	}
 
   	function validateStep4(){
-  		if(!($('[name="contentWriting"]:checked').length > 0) || (!($('[name="ITSkills"]:checked').length > 0)) || !($('[name="resumeBuilding"]:checked').length > 0) || !($('[name="softSkills"]:checked').length > 0) || !($('[name="digitalMarketing"]:checked').length > 0) || !($('[name="communication"]:checked').length > 0) || !($('[name="groupDiscussion"]:checked').length > 0) ){
+  		if(!($('[name="contentWriting"]:checked').length > 0) || (!($('[name="linux"]:checked').length > 0)) || (!($('[name="coding"]:checked').length > 0)) || !($('[name="resumeBuilding"]:checked').length > 0) || !($('[name="softSkills"]:checked').length > 0) || !($('[name="digitalMarketing"]:checked').length > 0) || !($('[name="communication"]:checked').length > 0) || !($('[name="groupDiscussion"]:checked').length > 0) ){
   			alert("Please tick all the boxes");
   			return ["Error"];
   		}

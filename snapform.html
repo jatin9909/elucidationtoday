@@ -81,7 +81,7 @@
 	</section>
 	<!-- Begin Snap Form -->
 	<section class="workshop-form">
-	  <form id="workshopForm" name="workshop_form" action="" enctype="multipart/form-data">
+	  <form class="control" id="workshopForm" name="workshop_form" action="" enctype="multipart/form-data">
 	  	<fieldset>
 		<div class="steps" id="stepsDemo">
 		  <div class="step-item">
@@ -281,12 +281,12 @@
 		      </div>
 		      <div class="field">
 		        <div class="field-label is-normal">
-		          <label class="label">Why do you want to join the SNAP program? How does this program meet your future goals? (250-400 Words)</label>
+		          <label class="label">Why do you want to join the SNAP program? How does this program meet your future goals?<br> (250-400 Words)</label>
 		        </div>
 		        <div class="field-body">
 		          <div class="field">
 		            <div class="control has-icon has-icon-right">
-		              <textarea class="input" name="whySNAP" id="whySNAP" placeholder="" data-validate="require"></textarea>
+		              <textarea class="input" name="whySNAP" id="whySNAP" placeholder="" data-validate="require" maxlength="3000"></textarea>
 		            </div>
 		          </div>
 		        </div>
@@ -294,7 +294,7 @@
 			  <div id="file-js-example" class="file has-name">
 			  	<div class="field-label is-normal">
 			  		<label class="label">
-			  			Upload one of your writing sample (Max 500 Words)
+			  			Upload one of your writing sample <b>[If Any]</b><br>(Max 500 Words)
 			  		</label>
 					<label class="file-label">
 					  <input class="file-input" type="file">
@@ -318,10 +318,10 @@
 		    </div>
 		    <div class="step-content column is-8 is-offset-2 tick-boxes-block has-text-centered">
 				<div class="field">
-				  <label for="">Mark according to your skillset (this is to understand your level of proficiency and will not be considered for short listing the applications)<br><br>1-New 2-Familiar 3-Intermediate 4-Skilled (Tick Boxes)<br><br></label>
+				  <label for="">Mark according to your skillset (this is to understand your level of proficiency and will not be considered for short listing the applications)<br><br>1-New 2-Familiar 3-Intermediate 4-Skilled<br><br></label>
 				</div>
 				<div class="field">
-				  <label class="title-label">Content Writing</label>
+				  <label class="title-label">How comfortable are you with the English language and its grammatical rules?</label>
 				  <input class="is-checkradio" id="Radio1.1" type="radio" value="1" name="contentWriting">
 				  <label for="Radio1.1">1</label>
 				  <input class="is-checkradio" id="Radio1.2" type="radio" value="2" name="contentWriting">
@@ -332,15 +332,26 @@
 				  <label for="Radio1.4">4</label>
 				</div>
 				<div class="field">
-				  <label class="title-label">IT Skills (Problem solving and Web Development)</label>
-				  <input class="is-checkradio" id="Radio2.1" type="radio" value="1" name="ITSkills">
+				  <label class="title-label">Linux (Operating System)</label>
+				  <input class="is-checkradio" id="Radio2.1" type="radio" value="1" name="linux">
 				  <label for="Radio2.1">1</label>
-				  <input class="is-checkradio" id="Radio2.2" type="radio" value="2" name="ITSkills">
+				  <input class="is-checkradio" id="Radio2.2" type="radio" value="2" name="linux">
 				  <label for="Radio2.2">2</label>
-				  <input class="is-checkradio" id="Radio2.3" type="radio" value="3" name="ITSkills">
+				  <input class="is-checkradio" id="Radio2.3" type="radio" value="3" name="linux">
 				  <label for="Radio2.3">3</label>
-				  <input class="is-checkradio" id="Radio2.4" type="radio" value="4" name="ITSkills">
+				  <input class="is-checkradio" id="Radio2.4" type="radio" value="4" name="linux">
 				  <label for="Radio2.4">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">Coding Skills</label>
+				  <input class="is-checkradio" id="Radio2_1" type="radio" value="1" name="coding">
+				  <label for="Radio2_1">1</label>
+				  <input class="is-checkradio" id="Radio2_2" type="radio" value="2" name="coding">
+				  <label for="Radio2_2">2</label>
+				  <input class="is-checkradio" id="Radio2_3" type="radio" value="3" name="coding">
+				  <label for="Radio2_3">3</label>
+				  <input class="is-checkradio" id="Radio2_4" type="radio" value="4" name="coding">
+				  <label for="Radio2_4">4</label>
 				</div>
 				<div class="field">
 				  <label class="title-label">Digital Marketing</label>
