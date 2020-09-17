@@ -3,7 +3,7 @@
     	@font-face
     	{
     		font-family: 'Metropolis-ExtraBold';
-    		src: url('Metropolis-ExtraBold.otf');
+    		src: url('../fonts/Metropolis-ExtraBold.otf');
     	}
     	h1
     	{
@@ -345,7 +345,7 @@ Abhishek CSS
 
 #go-to-top {
   display: inline-block;
-  background-image: url('images/top.png');
+  background-image: url('../images/top.png');
   -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
   width: 50px;
@@ -407,7 +407,7 @@ Abhishek CSS
 }
 
 .bg-plane{
-  background-image: url('images/paper_plane.png');
+  background-image: url('../images/paper_plane.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -530,6 +530,11 @@ Abhishek CSS
     }
     .rtb-pagination-container a[href="#"]{
       color: #111;
+    }
+    .rtb-pagination-container .row a.pager:hover{
+      color:#EA526F;
+      background: #FFF;
+      border:2px solid #EA526F !important;
     }
     /* blogs */
 
@@ -666,7 +671,7 @@ Abhishek CSS
 }
 @media only screen and (max-width: 900px){
   .bg-plane{
-    background-image: url('images/paper_plane_2.png');
+    background-image: url('../images/paper_plane_2.png');
   }
 }
 @media only screen and (max-width: 767px){
