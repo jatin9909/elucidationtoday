@@ -13,28 +13,30 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+    <meta name="title" content="Your Skill Salon • Elucidation Today">
+    <meta name="keywords" content="skill development, employable, entrepreneurial mindset, elucidation today, featured on front page, india today, new education policy, education startup, edtech startup">
+    <meta name="description" content="Helping the youth be more aware of the opportunities that are in front of them. Promoting skill development and career mentorship for the new force.">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-	<link rel="icon" href="./images/icon.png">  
+	<link rel="icon" href="static/images/icon.png">  
     
     
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="elucidation.css">
+    <link rel="stylesheet" href="static/css/elucidation.css">
 
 
     
-    <title>Elucidation Today</title>
+    <title>Your Skill Salon • Elucidation Today</title>
   </head>
   <body>
   	<nav class="navbar is-fixed-top is-transparent">
   		<div class="container">
 	  		<div class="navbar-brand">
 	  			<a class="navbar-item logo" href="index.html">
-	  				<img src="images/icon.png">
-	  			</a> 
+	  				<img src="static/images/icon.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+	  				<img src="static/images/et_watermark.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+	  			</a>
 	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
 		      		<span></span>
 		      		<span></span>
@@ -43,7 +45,7 @@
 	  		</div>
 	  		<div class="navbar-menu" id="navbarMenuHero">
 	  			<div class="navbar-end">
-	  				<a class="navbar-item">Elucidation Today</a>
+	  				<a class="navbar-item" href="index.html">Elucidation Today</a>
 	  				<a class="navbar-item" href="about-us.html">About</a>
 
 		 			<div class="navbar-item has-text-centered has-dropdown is-hoverable">
@@ -62,7 +64,20 @@
 
 
 		 			
-		   			<a class="navbar-item" href="index.html#contact">Contact</a>
+					 <div class="navbar-item has-text-centered has-dropdown is-hoverable">
+                        <a class="navbar-link is-arrowless">More 
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" id="more-link" aria-hidden="true"></i>
+                              </span>
+                        </a>
+                        <div class="navbar-dropdown is-boxed is-right">
+                            <a class="services-link navbar-item" href="blog.html">Blogs</a>
+                            <a class="services-link navbar-item" href="workshop.html">SNAP</a>
+                            <!--a class="services-link navbar-item" href="#mentors">Mentors</a-->
+                            <a class="services-link navbar-item " href="index.html#contact">Contact</a>
+
+                        </div>
+                    </div>
 		 			
 	 		    </div>
 
@@ -86,7 +101,7 @@
 				
 				<div class="column illust">
 					<figure class="image">
-						<img src="./images/vision-bw.png" width="75%">
+						<img src="static/images/vision-bw.png" width="75%">
 					</figure>
 					
 				</div>
@@ -108,7 +123,7 @@
 			<div class="columns is-vcentered">
 				<div class="column" >
 					<figure class="image">
-						<img src="./images/meditation-bw.png">
+						<img src="static/images/meditation-bw.png">
 					</figure>
 				</div>
 				<div class="column" >
@@ -136,7 +151,7 @@
 				</div>
 				<div class="column">
 					<figure class="image">
-						<img src="./images/success-bw.png">
+						<img src="static/images/success-bw.png">
 					</figure>
 				</div>
 			</div>
@@ -148,7 +163,7 @@
 			<div class="columns is-vcentered">
 				<div class="column">
 					<figure class="image">
-						<img src="./images/idea BW.png">
+						<img src="static/images/idea BW.png">
 					</figure>
 				</div>
 				<div class="column">
@@ -172,11 +187,11 @@
 						Be that favourite teacher!
 					</h1>
 					<p>
-						Invite us to your school or college for custom <a href="Services#faculty"><strong>faculty training</strong></a> sessions, guaranteed to enhance student performance.</p>
+						Invite us to your school or college for custom <a href="services.html#faculty"><strong>faculty training</strong></a> sessions, guaranteed to enhance student performance.</p>
 				</div>
 				<div class="column">
 					<figure class="image">
-						<img src="./images/teaching-bw.png">
+						<img src="static/images/teaching-bw.png">
 					</figure>
 				</div>
 			</div>
@@ -210,7 +225,7 @@
 			<div class="columns has-text-centered">
 				<div class="column" data-aos="fade-up-right">
 					<figure class="image is-128x128">
-						<img src="./images/DU.png" alt="University of Delhi">
+						<img src="static/images/DU.png" alt="University of Delhi">
 					</figure>
 
 					<ul>
@@ -222,7 +237,7 @@
 				</div>
 				<div class="column" data-aos="fade-up">
 					<figure class="image is-128x128">
-						<img src="./images/MGU.png" alt="Mahatma Gandhi University">
+						<img src="static/images/MGU.png" alt="Mahatma Gandhi University">
 					</figure>
 					<ul>
 						<li>De Paul Institute of Science & Technology, Angamaly</li>
@@ -230,7 +245,7 @@
 				</div>
 				<div class="column" data-aos="fade-up-left">
 					<figure class="image is-128x128">
-						<img src="./images/Seal_Panjab_University.png" alt="Panjab University">
+						<img src="static/images/Seal_Panjab_University.png" alt="Panjab University">
 					</figure>
 					<ul>
 						<li>Khalsa College for Women, Ludhiana</li>
@@ -318,7 +333,10 @@
 			<div class="columns is-vcentered">
 				<div class="column">
 					<a href="https://www.facebook.com/watch/?v=688796961976575">
-						<img src="images/indiatoday.jpeg" alt="India Today Cover" width="50%" height="auto">
+						<img src="static/images/indiatoday.jpeg" alt="India Today Cover" width="50%" height="auto">
+						<!--div class="overlay">
+    						<div class="text">India Today Facebook Page</div>
+  						</div-->
 					</a>
 				</div>
 				<div class="column">
@@ -443,7 +461,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>	
-    <script type="text/javascript" src="elucidation.js"></script>
+    <script type="text/javascript" src="static/js/elucidation.js"></script>
 
 
 

@@ -29,3 +29,16 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+
+function hover(element1, element2) {
+  console.log(element2, element1);
+  element1.style.opacity = 0;
+  element1.style.height = 0;
+  element2.style.height = "48px";
+}
+
+function unhover(element1, element2) {
+  element1.style.height = "48px";
+  element2.style.height = 0;
+  element1.style.opacity = 1;
+}
