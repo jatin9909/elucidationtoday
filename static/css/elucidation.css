@@ -3,7 +3,7 @@
     	@font-face
     	{
     		font-family: 'Metropolis-ExtraBold';
-    		src: url('Metropolis-ExtraBold.otf');
+    		src: url('../fonts/Metropolis-ExtraBold.otf');
     	}
     	h1
     	{
@@ -345,7 +345,7 @@ Abhishek CSS
 
 #go-to-top {
   display: inline-block;
-  background-image: url('images/top.png');
+  background-image: url('../images/top.png');
   -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
   width: 50px;
@@ -407,7 +407,7 @@ Abhishek CSS
 }
 
 .bg-plane{
-  background-image: url('images/paper_plane.png');
+  background-image: url('../images/paper_plane.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -516,11 +516,12 @@ Abhishek CSS
       padding: 10px;
     }
     .rtb-pagination-container .row a.pager {
-        border: 0;
+        border:2px solid #EA526F !important;
         background: #EA526F;
         padding: 3px 20px;
         color: #FFF;
         border-radius: 300px;
+        transition: all 0.3s;
     }
     .source-link{
       display: block;
@@ -530,6 +531,11 @@ Abhishek CSS
     }
     .rtb-pagination-container a[href="#"]{
       color: #111;
+    }
+    .rtb-pagination-container .row a.pager:hover{
+      color:#EA526F;
+      background: #FFF;
+      border:2px solid #EA526F !important;
     }
     /* blogs */
 
@@ -631,6 +637,9 @@ Abhishek CSS
   margin: 20px 0;
   text-decoration: underline;
 }
+.heading-label{
+  margin:50px 0 !important;
+}
 .datepicker{
   background: #FFF;
   border-radius:5px;
@@ -652,6 +661,12 @@ Abhishek CSS
   height:auto;
   max-width: unset;
 }
+.queries-block{
+  text-align: center;
+}
+.queries-block a{
+  color:#4a949f;
+}
 /* Workshop form */
 @media only screen and (max-width: 1100px){
   .diversity-gif{
@@ -666,7 +681,7 @@ Abhishek CSS
 }
 @media only screen and (max-width: 900px){
   .bg-plane{
-    background-image: url('images/paper_plane_2.png');
+    background-image: url('../images/paper_plane_2.png');
   }
 }
 @media only screen and (max-width: 767px){

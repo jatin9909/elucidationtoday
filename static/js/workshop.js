@@ -172,10 +172,32 @@
   	}
 
   	function validateStep4(){
-  		if(!($('[name="contentWriting"]:checked').length > 0) || (!($('[name="linux"]:checked').length > 0)) || (!($('[name="coding"]:checked').length > 0)) || !($('[name="resumeBuilding"]:checked').length > 0) || !($('[name="softSkills"]:checked').length > 0) || !($('[name="digitalMarketing"]:checked').length > 0) || !($('[name="communication"]:checked').length > 0) || !($('[name="groupDiscussion"]:checked').length > 0) ){
-  			alert("Please tick all the boxes");
-  			return ["Error"];
-  		}
+      tick_boxes = [
+      "english_language",
+      "engaging_content",
+      "linux",
+      "coding",
+      "office_tools",
+      "digitalMarketing",
+      "impressive_communication",
+      "email_writing",
+      "feedback",
+      "cognitive_biases",
+      "communicator",
+      "pitching",
+      "time_manage",
+      "observation_skills",
+      "creative_critical",
+      "resumeBuilding",
+      "groupDiscussion"
+      ]
+
+      for(i=0;i<tick_boxes.length;i++){
+        if(!($('[name='+tick_boxes[i]+']:checked').length > 0)){
+    			alert("Please tick all the boxes");
+    			return ["Error"];
+    		}
+      }
   		return true;
   	}
  var steps = new bulmaSteps.attach("#stepsDemo", {
@@ -195,7 +217,10 @@
           	break;
           }
       },
-    onShow: (id) => console.log(id)
+    onShow: (id) => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
 //	  onFinish
 //	  onError*/
     });
