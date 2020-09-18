@@ -516,11 +516,12 @@ Abhishek CSS
       padding: 10px;
     }
     .rtb-pagination-container .row a.pager {
-        border: 0;
+        border:2px solid #EA526F !important;
         background: #EA526F;
         padding: 3px 20px;
         color: #FFF;
         border-radius: 300px;
+        transition: all 0.3s;
     }
     .source-link{
       display: block;
@@ -636,6 +637,9 @@ Abhishek CSS
   margin: 20px 0;
   text-decoration: underline;
 }
+.heading-label{
+  margin:50px 0 !important;
+}
 .datepicker{
   background: #FFF;
   border-radius:5px;
@@ -656,6 +660,12 @@ Abhishek CSS
   white-space: unset;
   height:auto;
   max-width: unset;
+}
+.queries-block{
+  text-align: center;
+}
+.queries-block a{
+  color:#4a949f;
 }
 /* Workshop form */
 @media only screen and (max-width: 1100px){
