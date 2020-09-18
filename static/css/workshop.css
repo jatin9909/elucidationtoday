@@ -133,6 +133,14 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+.procedure-text .snap-link{
+  text-decoration: none;
+  color: #FFF;
+  transition: all 0.3s;
+}
+.procedure-text .snap-link:hover::before{
+  content: '>>> ';
+}
 .man-on-procedure{
 	position: absolute;
 	top:15px;
@@ -147,16 +155,50 @@
 .workshop-apply-button span{
   background: #EA526F;
   position: fixed;
-  margin-left:-55px;
-  bottom: 20px;
+  bottom: 50px;
+  left:0;
   color: #FFF;
   padding: 5px 20px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 1px #e2e2e2;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.3s;
+}
+.workshop-apply-button span:hover {
+  padding-left:40px;
 }
 .workshop-apply-button span:active {
   background-color: #EA525F;
   transform: translateY(2px);
+}
+.collaborators-project{
+  margin: 2rem 0;
+}
+
+
+.details-block .detail-block{
+  background: #FFF;
+  padding: 20px;
+}
+.details-block .price-block{
+  background: #4a949f;
+  color:#FFF;
+  padding: 20px;
+}
+.details-block .detail-block h3{
+  color: #4a949f;
+  font-size: 26px;
+  font-weight: 700;
+}
+.details-block{
+  margin:40px 0 !important;
+}
+.details-block .detail-block li::before{
+  content: "★ ";
+  color: #4a949f;
+}
+.brochure-link{
+  text-align: right;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1220px){
