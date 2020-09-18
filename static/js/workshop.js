@@ -224,4 +224,3 @@
 //	  onFinish
 //	  onError*/
     });
- console.log(steps);
