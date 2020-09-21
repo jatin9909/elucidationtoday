@@ -29,6 +29,16 @@
   			animation: title-text-animate-rev 0.75s ease forwards;
 
     	}
+      #page_loader{
+        position: fixed;
+        text-align: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+        background: url(../images/logo_loader.gif) center no-repeat #FDF7E8;
+      }
 
     	.main:hover
     	{
@@ -96,7 +106,7 @@
     }
 
     .logo img{
-      height: 48px;
+      height: 40px;
       max-height: none;
     }
 
