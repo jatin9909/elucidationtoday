@@ -19,7 +19,7 @@
 
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-	<link rel="icon" href="static/images/icon.png">  
+	<link rel="icon" href="static/images/logo.png">  
    
     
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -29,12 +29,16 @@
     <title>Services • Elucidation Today</title>
   </head>
   <body>
+    <div id="page_loader">
+    </div>
+
     <nav class="navbar is-fixed-top is-transparent">
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item logo" href="index.html">
-	  				<img src="static/images/icon.png">                    
-                </a> 
+                    <img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+                    <img src="static/images/logo_full.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+                </a>
                 <span class="navbar-burger burger"data-target="navbarMenuHero">
                     <span></span>
                     <span></span>
