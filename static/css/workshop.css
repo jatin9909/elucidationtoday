@@ -70,9 +70,6 @@
 }
 
 .collaborators-project{
-    background-color: rgb(18, 147, 156);
-    color: white;
-    padding: auto;
 }
 .collab-link{
     margin-bottom: 2rem;
@@ -173,8 +170,14 @@
 .collaborators-project{
   margin: 2rem 0;
 }
+.collaborators-project img{
+  height:160px;
+  border-radius: 200px;
+}
 
-
+.collaborators a{
+  text-decoration: none;
+}
 .details-block .detail-block{
   background: #FFF;
   padding: 20px;
@@ -259,5 +262,11 @@
     }
     .collab-link{
         font-size: 1vh;
+    }
+    .img-left, .img-right{
+      display: none;
+    }
+    .collaborators .is-half{
+      width: 100% !important;
     }
   }
