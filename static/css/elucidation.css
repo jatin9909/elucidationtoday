@@ -422,6 +422,14 @@ Abhishek CSS
   background-position: center;
   background-size: contain;
 }
+.bg-plane img{
+  width:150px;
+  height:165px;
+  object-fit: cover;
+  -o-object-fit:cover;
+  object-position: center;
+  -o-object-position: center;
+}
 .diversity-gif{
   display: inline-block;
   vertical-align: middle;
