@@ -461,8 +461,17 @@
 		</div>
 		</footer>
 		<a id="go-to-top"></a>
-		<div id="my-botui-app">
-  			<bot-ui></bot-ui>
+		<div class="bot-container">
+			<div class="bot-icon" onclick="displayBot()">
+				<img class="message-icon" src="static/images/faq_icon.png">
+				<img class="cross-icon" src="static/images/cross_circle_1.png">
+			</div>
+			<div id="my-botui-app" class="bot-app">
+				<div class="bot-header">
+					<span>Elucidation Today</span>
+				</div>
+	  			<bot-ui></bot-ui>
+			</div>
 		</div>
   </body>
    
@@ -470,7 +479,7 @@
 
     <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
     <script src="https://unpkg.com/botui/build/botui.min.js"></script>
-
+    <script src="static/js/bot.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>	
     <script type="text/javascript" src="static/js/elucidation.js"></script>
@@ -581,20 +590,5 @@
 
           )
       });
-
-
-
-
-
-  </script>
-  <script type="text/javascript">
-  	var botui = new BotUI('my-botui-app');
-	botui.message.add({
-	  content: 'Hello There!'
-	}).then(function () { // wait till its shown
-	  botui.message.add({ // show next message
-	    content: 'How are you?'
-	  });
-	});
   </script>
 </html>
