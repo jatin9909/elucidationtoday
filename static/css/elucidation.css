@@ -686,6 +686,67 @@ Abhishek CSS
   color:#4a949f;
 }
 /* Workshop form */
+
+
+
+
+/* botui css */
+.bot-container{
+  position: relative;
+}
+.bot-icon{
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
+}
+.bot-icon img{
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.bot-icon .cross-icon{
+  opacity: 0;
+}
+.bot-icon .message-icon{
+  position: absolute;
+}
+.bot-app{
+  position: fixed;
+  left:10px;
+  bottom: 140px;
+  height: 0px;
+  width: 0px;
+  transition: all 0.3s;
+}
+.bot-app .botui-container{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.bot-app .bot-header{
+  width:0;
+  max-height: 54px;
+  overflow: hidden;
+  padding: 15px 0;
+  text-align: center;
+  background: #4a949f;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: #FFF;
+}
+.bot-app .botui-message-content{
+}
+.bot-app .botui-actions-text-input{
+  background-color: unset !important;
+}
+.bot-app .human{
+  background: #4a949f;
+  color:white;
+}
+/* botui css */
+
 @media only screen and (max-width: 1100px){
   .diversity-gif{
     display: block;

@@ -19,12 +19,15 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 	<link rel="icon" href="static/images/logo.png">  
+<!-- required for basic layout -->
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui.min.css">
+<!-- default theme - you can create your own theme -->
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui-theme-default.css">
     
     
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/elucidation.css">
-
 
     
     <title>Your Skill Salon • Elucidation Today</title>
@@ -458,10 +461,25 @@
 		</div>
 		</footer>
 		<a id="go-to-top"></a>
-
+		<div class="bot-container">
+			<div class="bot-icon" onclick="displayBot()">
+				<img class="message-icon" src="static/images/faq_icon.png">
+				<img class="cross-icon" src="static/images/cross_circle_1.png">
+			</div>
+			<div id="my-botui-app" class="bot-app">
+				<div class="bot-header">
+					<span>Elucidation Today</span>
+				</div>
+	  			<bot-ui></bot-ui>
+			</div>
+		</div>
   </body>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+    <script src="static/js/bot.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>	
     <script type="text/javascript" src="static/js/elucidation.js"></script>
@@ -572,10 +590,5 @@
 
           )
       });
-
-
-
-
-
   </script>
 </html>
