@@ -693,6 +693,7 @@ Abhishek CSS
 /* botui css */
 .bot-container{
   position: relative;
+  z-index: 100;
 }
 .bot-icon{
   position: fixed;
@@ -746,7 +747,17 @@ Abhishek CSS
   color:white;
 }
 /* botui css */
-
+@media only screen and (max-height: 500px){
+  .bot-icon{
+    bottom:0;
+  }
+  .bot-icon img{
+    height:30px;
+  }
+  .bot-app{
+    bottom:95px;
+  }
+}
 @media only screen and (max-width: 1100px){
   .diversity-gif{
     display: block;
