@@ -747,6 +747,45 @@ Abhishek CSS
   color:white;
 }
 /* botui css */
+
+
+
+
+
+
+
+
+
+
+/* specific to SNAP */
+#snap-popup{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17,17,17,0.5);
+  text-align: center;
+  z-index: 10000;
+  display: none;
+}
+#snap-popup img{
+  height: 100vh;
+  -object-fit: cover;
+  object-fit: cover;
+}
+#snap-popup .close{
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  color: #FFF;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+
+/* specific to SNAP */
+
 @media only screen and (max-height: 500px){
   .bot-icon{
     bottom:0;
@@ -814,6 +853,16 @@ Abhishek CSS
 	.make-image-readable figure{
 		width:500px;
 	}
+  #snap-popup img{
+    margin-top: 20px;
+    height: 80vh;
+  }
+  #snap-popup .close{
+    color: #111;
+    right: 20px;
+  }
+
+
 }
 @media only screen and (max-width: 450px){
   .diversity-gif video{
