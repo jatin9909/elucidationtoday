@@ -53,7 +53,7 @@
 }
 
 .bg-img{
-  background-image: url('../images/workshop/Picture1.webp');
+  background-image: url('../images/workshop/Picture1.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -62,7 +62,7 @@
 }
 
 .bg-img-skills{
-    background-image: url('../images/workshop/Picture2.webp');
+    background-image: url('../images/workshop/Picture2.png');
     background-position: center center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -78,14 +78,14 @@
 }
 
 .img-left{
-    background-image: url('../images/workshop/Picture4.webp');
+    background-image: url('../images/workshop/Picture4.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 10px;
 }
 .img-right{
-    background-image: url('../images/workshop/Picture3.webp');
+    background-image: url('../images/workshop/Picture3.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
