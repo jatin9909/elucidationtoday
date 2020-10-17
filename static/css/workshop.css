@@ -155,7 +155,7 @@
   bottom: 50px;
   left:0;
   color: #FFF;
-  padding: 5px 20px;
+  padding: 10px 50px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: all 0.3s;
@@ -230,6 +230,10 @@
 	.man-on-procedure{
 		display: none;
 	}
+  .workshop-apply-button span{
+    padding: 5px 20px;
+  }
+
 
 }
 
