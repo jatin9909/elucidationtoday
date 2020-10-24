@@ -58,3 +58,7 @@ document.onreadystatechange = function () {
       },1000);
   }
 }
+
+
+
+$('.mentors-pen img').height($('.mentors-details').height());

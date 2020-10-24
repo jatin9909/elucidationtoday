@@ -688,6 +688,20 @@ Abhishek CSS
 /* Workshop form */
 
 
+/* Mentors */
+
+.mentors-pen{
+  height: 200px;
+ }
+.be-mentor-img img{
+  max-height: 350px;
+ }
+.be-mentor-link span{
+   color: #FFF;
+   border-radius: 20px; 
+}
+
+/* Mentors */
 
 
 /* botui css */
@@ -887,4 +901,7 @@ Abhishek CSS
 }
 #more-link:hover{
   color:  #EA526F !important;
+}
+#kaveri{
+  border-radius: 50%;
 }

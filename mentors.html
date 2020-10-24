@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176428633-1"></script>
+	<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-176428633-1');
+ </script>
+
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+ <link rel="icon" href="static/images/logo.png">
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+ <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+ <link rel="stylesheet" href="static/css/elucidation.css">
+
+ <title>Elucidation Today</title>
+</head>
+<body>
+  <div id="page_loader">
+  </div>
+
+	<nav class="navbar is-fixed-top is-transparent">
+    <div class="container">
+     <div class="navbar-brand">
+      <a class="navbar-item logo" href="index.html">
+       <img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+       <img src="static/images/logo_full.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+     </a>
+     <span class="navbar-burger burger"data-target="navbarMenuHero">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </div>
+  <div class="navbar-menu" id="navbarMenuHero">
+    <div class="navbar-end">
+     <a class="navbar-item" href="index.html">Elucidation Today</a>
+     <a class="navbar-item" href="about-us.html">About</a>
+
+     <div class="navbar-item has-text-centered has-dropdown is-hoverable">
+       <a class="navbar-link is-arrowless" href="services.html">Services</a>
+       <div class="navbar-dropdown is-boxed is-right">
+         <a class="services-link navbar-item" href="services.html#career">Career Awareness</a>
+         <a class="services-link navbar-item" href="services.html#skills">Skill Development</a>
+
+         <a class="services-link navbar-item" href="services.html#mentor">Mentorship</a>
+         <a class="services-link navbar-item" href="services.html#startup">Startup Guidance</a>
+         <a class="services-link navbar-item" href="services.html#faculty">Faculty Training</a>
+
+
+       </div>
+     </div>
+
+
+
+     <div class="navbar-item has-text-centered has-dropdown is-hoverable">
+      <a class="navbar-link is-arrowless">More
+        <span class="icon is-small">
+          <i class="fas fa-angle-down" id="more-link" aria-hidden="true"></i>
+        </span>
+      </a>
+      <div class="navbar-dropdown is-boxed is-right">
+        <a class="services-link navbar-item" href="blog.html">Blogs</a>
+        <a class="services-link navbar-item" href="workshop.html">SNAP</a>
+        <a class="services-link navbar-item" href="mentors.html">Mentors</a>
+        <a class="services-link navbar-item " href="index.html#contact">Contact</a>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+
+
+</nav>
+<section class="hero comm">
+  <div class="hero-body has-text-centered">
+    <div class="container">
+      <h1 class="title comm-title">
+        Mentors for you
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="section is-main">
+  <div class="columns" data-aos="fade-up">
+    <div class="column is-8 is-offset-2">
+      <h1 class="title has-text-centered is-4 ">
+        We have some amazing mentors from all kinds of backgrounds.
+      </h1>
+      <h2 class="subtitle has-text-centered">
+        Meet some of them from our ever growing list.
+      </h2>
+      <br>
+
+    </div>
+  </div>
+</section>
+<section class="section is-main">
+  <div class="columns aos-init aos-animate">
+    <div class="column is-8 is-offset-2 mentors-details">
+      <div class="level-left" id="kar">
+        <div class="level-left">
+          <div class="level-item">
+            <img src="static/images/mentors/anshul.png" width="150px" height="auto">
+          </div>
+
+          <div>
+            <h1>ANSHUL MAUDAR</h1>
+            <div>
+              <h6><strong>Yale University</strong></h6>
+              <h6>Master’s degree, International & Development Economics </h6>
+              <h6><strong>Harvard Business School</strong></h6>
+							<h6>Research Associate</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="level is-mobile" id="pra">
+        <div class="level-left">
+          <div class="level-item">
+            <img src="static/images/mentors/karthik.png" width="150px" height="auto">
+          </div>
+          <div>
+            <h1>Kartikeya Pradhan</h1>
+
+            <h6><strong>INSEAD</strong></h6>
+            <h6>MBA</h6>
+            <h6><strong>Arthur D. Little</strong></h6>
+						<h6>Management Consultant</h6>
+						<h6><strong>NatWest Markets, London</strong></h6>
+						<h6>Ex- Associate</h6>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="level is-mobile" id="muk">
+        <div class="level-left">
+          <div class="level-item">
+            <img src="static/images/mentors/kaveri.png" id="kaveri" width="150px" height="auto">
+          </div>
+          <div>
+            <h1 >KAVERI SINGH</h1>
+            <h6><strong>Institute of Hotel Management, Delhi</strong></h6>
+            <h6>Bachelor’s degree, Hospitality, Tourism, Catering, and Nutrition </h6>
+            <h6><strong>Essar Group</strong></h6>
+						<h6>Deputy Manager</h6>
+						<h6><strong>New Delhi International Airport (Holiday Inn)</strong></h6>
+						<h6>Ex-Assistant Manager Corporate Sales</h6>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="level is-mobile" id="ans">
+        <div class="level-left">
+          <div class="level-item">
+            <img src="static/images/mentors/mukund.png" width="150px" height="auto">
+          </div>
+          <div>
+            <h1>MUKUND MARODIA</h1>
+            <h6><strong>St. Stephen’s College, Delhi</strong></h6>
+            <h6>Bachelor of Science, Physical Sciences</h6>
+            <h6><strong>Samagra | Transforming Governance</strong></h6>
+            <h6>Consultant</h6>
+						<h6><strong>Boston Consulting Group</strong></h6>
+						<h6>Ex- Specialist Consultant</h6>
+          </div>
+        </div>
+
+      </div>
+			<div class="level is-mobile" id="ans">
+        <div class="level-left">
+          <div class="level-item">
+            <img src="static/images/mentors/prachi.png" width="150px" height="auto">
+          </div>
+          <div>
+            <h1>PRACHI SHARMA</h1>
+            <h6><strong>Harvard Business School Online</strong></h6>
+            <h6>Credential of Readiness</h6>
+            <h6><strong>Institute of Chartered Accountants of India</strong></h6>
+            <h6>Chartered Accountant</h6>
+						<h6><strong>Cipla</strong></h6>
+						<h6>Human Resources Business Partner</h6>
+						<h6><strong>Vittavaran | Towards Financial Security</strong></h6>
+						<h6>Co-founder</h6>
+          </div>
+        </div>
+
+
+      </div>
+
+			<div class="level is-mobile" id="ans">
+        <div class="level-left">
+          <div class="level-item">
+            <img src="static/images/mentors/ghose.jpg" id="kaveri" width="150px" height="auto">
+          </div>
+          <div>
+            <h1>SAMPURNA GHOSE</h1>
+            <h6>Master’s degree, PGCM in Sales and Marketing Management </h6>
+            <h6><strong>Purple Speaks</strong></h6>
+            <h6>Co-creator</h6>
+            <h6><strong>Mattel </strong></h6>
+						<h6>Ex- Regional Senior Licensing Associate</h6>
+						<h6><strong>The Walt Disney Company</strong></h6>
+						<h6>Ex- Sales Associate</h6>
+						<h6><strong>Viacom18 Media Private Limited</strong></h6>
+						<h6>Ex- Account Executive, Sales</h6>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="column is-1 mentors-pen">
+	   	<img src="static/images/mentors/lol.png" >
+	</div>
+
+  </div>
+
+</section>
+<section class="section is-main has-text-centered">
+
+
+  <div class="column is-8 is-offset-2" data-aos="fade-up" data-aos-duration="1000">
+    <div class="column is-8 is-offset-2" data-aos="fade-up">
+      <h1 class="title level-item">
+        Would you like to mentor students?
+      </h1>
+    </div>
+    <div class="column is-8 is-offset-2 be-mentor-img">
+      <img src="static/images/mentors/round.png">
+    </div>
+    <div class="column is-8 is-offset-2" data-aos="fade-up" data-aos-duration="2000" >
+      <a href="index.html#contact" class="be-mentor-link">
+        <span class="column is-8 is-offset-2 comm">
+          GET IN TOUCH
+        </span>
+
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="footer has-background-dark" data-aos="fade-in">
+  <div class="columns is-vcentered">
+    <div class="column is-4 is-offset-4 has-text-centered">
+
+      <a class="social" href="https://www.instagram.com/elucidation_today/" alt="@elucidation_today">
+        <span class="icon">
+          <i class="fab fa-instagram fa-2x"></i>
+        </span>
+      </a>
+      <a class="social" href="mailto:contact@elucidationtoday.com" alt="mailto:contact@elucidationtoday.com">
+        <span class="icon">
+          <i class="far fa-envelope fa-2x"></i>
+        </span>
+      </a>
+      <a class="social" href="https://www.linkedin.com/company/elucidation-today" alt="linkedin">
+        <span class="icon">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </span>
+      </a>
+
+
+
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript" src="static/js/elucidation.js"></script>
+
+
+<script>
+  AOS.init();
+</script>
+<script>
+
+ function openTab(event, tabName)
+ {
+  event.preventDefault();
+  var i, x, tablinks;
+  x=document.getElementsByClassName('content-tab');
+  for ( i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName('tab');
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+  }
+
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += " is-active";
+
+}
+
+
+</script>
+<script>
+  (function()
+  {
+    var burger=document.querySelector('.burger');
+    var nav=document.querySelector('#'+burger.dataset.target);
+
+
+    burger.addEventListener('click', function()
+    {
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active' );
+
+
+
+    });
+  })();
+</script>
+<script>
+	function hover(element1, element2) {
+    console.log(element2, element1);
+    element1.style.opacity = 0;
+    element1.style.height = 0;
+    element2.style.height = "48px";
+  }
+
+  function unhover(element1, element2) {
+    element1.style.height = "48px";
+    element2.style.height = 0;
+    element1.style.opacity = 1;
+  }
+</script>
