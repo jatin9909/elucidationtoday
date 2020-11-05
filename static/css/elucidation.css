@@ -310,7 +310,12 @@ Abhishek CSS
 .illust img:hover{
     filter: drop-shadow(2px 4px 6px #4a949f);
 }
-
+.read-all-blogs-medium{
+  text-align: center;
+}
+.read-all-blogs-medium a{
+  color: #4a949f;
+}
 .rest_content{
   display: none;
 }
