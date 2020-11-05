@@ -1,0 +1,111 @@
+.sub-title{
+	color:#4a4a4a;
+	font-size: 20px;
+}
+#team{
+	color: #4a4a4a;
+	font-size: 22px;
+	font-weight: 700;
+}
+#head{
+	background-color: #024652;
+	color: white;
+	border-radius: 5px;
+}
+#head-box{
+	background-color: white;
+	color:#204b52;
+	border-radius: 15px;
+	height: 150px;
+}
+#job{
+	background-color: #024652;
+	color: white;
+}
+.job-box{
+	background-color: white;
+	height: 200px;
+	box-shadow:10px 10px 8px #888888;
+}
+.job-box ul li{
+	padding: 5px 0;
+}
+.job-box ul li:before{
+	content: '★';
+	padding:0 2px;
+}
+#box1{
+	background-color:#46c1d4;
+	color:white;
+	border-radius: 30px;
+}
+#box2{
+	background-color:#4bb4c4;
+	color:white;
+	border-radius: 30px;
+
+}
+#box3{
+	background-color:#50a1ad;
+	color:white;
+	border-radius: 30px;
+}
+#box4{
+	background-color:#25474d;
+	color:white;
+	border-radius: 30px;
+}
+.hero{
+	padding-top: 50px;
+	padding-right: 0px;
+	padding-bottom: 25px;
+	padding-left: 0px;
+}
+#first-pic{
+	max-height: 300px;
+	min-height: 200px;
+	width: auto;
+}
+#teacher{
+	max-height:300px;
+	min-height:50px;
+	width: auto;
+	position: absolute;
+	bottom:0px;
+	left: 600px;
+}
+#pic2{
+	height: 400px;
+	width: auto;
+}
+.mail_cv{
+	font-size: 18px;
+	font-weight: 100;
+	margin: 20px;
+	line-height: 1.5;
+}
+.mail_cv .subject{
+	color: #4a949f;
+	font-weight: 700;
+}
+.mail_cv .mailto{
+	margin: 10px;
+}
+.mail_cv .mailto a{
+	text-decoration: none;
+	color: #4a4a4a;
+}
+.mail_cv .mailto a:hover{
+	text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+	#roc{
+		display: none;
+	}
+	.tc-img{
+		display: none;
+	}
+}
+.tc-img{
+	position: relative;
+}
