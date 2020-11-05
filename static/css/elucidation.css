@@ -304,6 +304,13 @@ Abhishek CSS
 }
 /* REMOVE PLAY BUTTON */
 
+.illust img{
+  transition: 0.3s;
+}
+.illust img:hover{
+    filter: drop-shadow(2px 4px 6px #4a949f);
+}
+
 .rest_content{
   display: none;
 }
