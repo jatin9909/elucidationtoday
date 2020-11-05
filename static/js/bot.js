@@ -1,19 +1,28 @@
+	function setHW(height, width, header_width){
+		if($('#my-botui-app').height() == 0){
+			$('#my-botui-app').height(height);
+			$('#my-botui-app').width(width);
+			$('.bot-icon .message-icon').css('opacity','0');
+			$('.bot-icon .cross-icon').css('opacity','1');
+			$('.bot-app .bot-header').width(header_width);
+		}
+		else{
+			$('#my-botui-app').height(0);
+			$('#my-botui-app').width(0);
+			$('.bot-icon .message-icon').css('opacity','1');
+			$('.bot-icon .cross-icon').css('opacity','0');
+			$('.bot-app .bot-header').width(0);
+		}
+	}
+
     function displayBot(){
-	    	if($('#my-botui-app').height() == 0){
-	    		$('#my-botui-app').height(360);
-	    		$('#my-botui-app').width(300);
-	    		$('.bot-icon .message-icon').css('opacity','0');
-	    		$('.bot-icon .cross-icon').css('opacity','1');
-	    		$('.bot-app .bot-header').width(300);
-	    	}
-	    	else{
-	    		$('#my-botui-app').height(0);
-	    		$('#my-botui-app').width(0);
-	    		$('.bot-icon .message-icon').css('opacity','1');
-	    		$('.bot-icon .cross-icon').css('opacity','0');
-	    		$('.bot-app .bot-header').width(0);
-	    	}
+    	if($(window).width() > 768){
+    		setHW('360','300','300');
     	}
+    	else{
+    		setHW('70%', '90%', '100%');
+    	}
+    }
 
 
 	function goBack(where){
