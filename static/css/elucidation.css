@@ -304,17 +304,28 @@ Abhishek CSS
 }
 /* REMOVE PLAY BUTTON */
 
+/* Home */
+
+#achievements .slider{
+  outline: none;
+  text-align: center;
+}
+#achievements .slider .slider-item .image img{
+  max-height: 100%;
+  width: unset;
+  display: inline;
+}
+#achievements .slider .slider-item ul li:nth-child(2){
+  font-weight: 700;
+}
+/* Home */
+/* about */
+
 .illust img{
   transition: 0.3s;
 }
 .illust img:hover{
     filter: drop-shadow(2px 4px 6px #4a949f);
-}
-.read-all-blogs-medium{
-  text-align: center;
-}
-.read-all-blogs-medium a{
-  color: #4a949f;
 }
 .rest_content{
   display: none;
@@ -404,7 +415,9 @@ Abhishek CSS
   opacity: 1;
   visibility: visible;
 }
+
 * {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
 
 /* Styles for the content section */
 .map-container{
@@ -463,7 +476,17 @@ Abhishek CSS
   color: #FDF7E8;
   font-size: 48px;
 }
+/* About */
+
+
 /* blogs */
+    .read-all-blogs-medium{
+      text-align: center;
+    }
+    .read-all-blogs-medium a{
+      color: #4a949f;
+    }
+
     .rtb-col{
       padding: 0 !important;
       font-size: 16px;

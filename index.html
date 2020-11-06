@@ -18,6 +18,8 @@
     <meta name="description" content="Helping the youth be more aware of the opportunities that are in front of them. Promoting skill development and career mentorship for the new force.">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+
 	<link rel="icon" href="static/images/logo.png">  
 <!-- required for basic layout -->
 	<link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui.min.css">
@@ -223,13 +225,130 @@
 		<div class="container has-text-centered" data-aos="fade-up">
 			<div class="column is-10 is-offset-1">
 			<h1 class="title achievements-text is-size-4">
-				We've successfully conducted sessions in the following prestigious institutions
+				We've successfully conducted sessions for the students of the following prestigious institutions
 			</h1>
 			</div>
 		</div>
 		<div class="container">
+			<!-- Start Carousel -->
+			<div id="carousel-demo" class="carousel">
+				<div class="item-1">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/kmc.jpg" alt="University of Delhi">
+						</figure>
+						<ul>
+							<li>Kirori Mal College, Delhi</li>
+							<li>University of Delhi</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-2">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/khalsa-ludhiana.jpg" alt="Panjab University">
+						</figure>
+						<ul>
+							<li>Khalsa College for Women, Ludhiana</li>
+							<li>Panjab University</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-3">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/patkar-varde.png" alt="University of Mumbai">
+						</figure>
+						<ul>
+							<li>Patkar Varde College, Goregaon, Mumbai</li>
+							<li>University of Mumbai</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-4">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/de-paul.jpg" alt="Mahatma Gandhi University">
+						</figure>
+						<ul>
+							<li>De Paul Institute of Science & Technology, Angamaly</li>
+							<li>Mahatma Gandhi University</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-5">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/rajiv-gandhi-shimla.jpg" alt="Himachal Pradesh University">
+						</figure>
+						<ul>
+							<li>Rajiv Gandhi Government Degree College, Kotshera</li>
+							<li>Himachal Pradesh University</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-6">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/hansraj-college.jpg" alt="University of Delhi">
+						</figure>
+						<ul>
+							<li>Hansraj College, Delhi</li>
+							<li>University of Delhi</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-7">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/lsr.png" alt="University of Delhi">
+						</figure>
+						<ul>
+							<li>Lady Sri Ram College, Delhi</li>
+							<li>University of Delhi</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-8">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/guru-nanak-khalsa.jpg" alt="Panjab University">
+						</figure>
+						<ul>
+							<li>Guru Nanak Khalsa College of Women, Ludhiana</li>
+							<li>Panjab University</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-9">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/drc.jpg" alt="University of Delhi">
+						</figure>
+						<ul>
+							<li>Daulat Ram College, Delhi</li>
+							<li>University of Delhi</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-10">
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<figure class="image is-128x128">
+							<img src="static/images/colleges/dav.png" alt="CBSE">
+						</figure>
+						<ul>
+							<li>DAV Sr. Sec Public School, New Shimla</li>
+							<li>CBSE</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- End Carousel -->
+		</div>	
+
+		<!--div class="container">
 			<div class="columns has-text-centered">
-				<div class="column" data-aos="fade-up-right">
+				<div class="column" data-aos="fade-right" data-aos-duration="2000">
 					<figure class="image is-128x128">
 						<img src="static/images/DU.png" alt="University of Delhi">
 					</figure>
@@ -259,8 +378,9 @@
 					</ul>
 				</div>
 			</div>	
-		</div>
+		</div-->
 	</section>
+
 
 	<section class="section testimonial" data-aos="fade-up">
 		<div class="container has-text-centered">
@@ -487,7 +607,19 @@
     <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>	
     <script type="text/javascript" src="static/js/elucidation.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+	<script>
+	bulmaCarousel.attach('#carousel-demo', {
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		loop: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		pauseOnHover: false,
+		pagination: false,
+		navigationSwipe: true
+	});
+	</script>
 
 
 
