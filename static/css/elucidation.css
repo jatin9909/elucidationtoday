@@ -458,16 +458,6 @@ Abhishek CSS
 .diversity-gif{
   display: inline-block;
   vertical-align: middle;
-  -webkit-filter: invert(16%) sepia(22%) saturate(0%) hue-rotate(194deg) brightness(93%) contrast(84%);
-  filter: invert(16%) sepia(22%) saturate(0%) hue-rotate(194deg) brightness(93%) contrast(84%);
-}
-.diversity-gif:hover{
-  filter: none;
-  -webkit-filter: none;
-}
-.diversity-gif video{
-  height: 320px;
-  width: 320px;
 }
 .diversity-text{
   display: inline-block;
@@ -853,6 +843,7 @@ Abhishek CSS
   }
   .diversity-text{
     display: block;
+    font-size: 36px;
     margin-top:10px;
     text-align: center;
   }

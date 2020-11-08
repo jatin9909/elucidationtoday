@@ -1,0 +1,186 @@
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<!--script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script-->
+<script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.js"></script>
+
+<style type="text/css">
+#container {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.highcharts-data-label-color-0{
+    display: none;  
+}
+.highcharts-data-label-color-1 text tspan{
+    font-size: 7px;
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+.highcharts-credits, .highcharts-exporting-group, .highcharts-legend{
+    display: none;
+}
+</style>
+
+<div id="container"></div>
+
+
+<script type="text/javascript">
+	// Prepare demo data
+// Data is joined to map using value of 'hc-key' property by default.
+// See API docs for 'joinBy' for more info on linking data and map.
+/*var data = [
+    ['in-py', 0],
+    ['in-ld', 0],
+    ['in-wb', 0],
+    ['in-or', 0],
+    ['in-br', 0],
+    ['in-sk', 0],
+    ['in-ct', 0],
+    ['in-tn', 0],
+    ['in-mp', 0],
+    ['in-2984', 0],
+    ['in-ga', 0],
+    ['in-nl', 0],
+    ['in-mn', 0],
+    ['in-ar', 0],
+    ['in-mz', 0],
+    ['in-tr', 0],
+    ['in-3464', 0],
+    ['in-dl', 2],
+    ['in-hr', 2],
+    ['in-ch', 2],
+    ['in-hp', 2],
+    ['in-jk', 2],
+    ['in-kl', 2],
+    ['in-ka', 2],
+    ['in-dn', 2],
+    ['in-mh', 2],
+    ['in-as', 2],
+    ['in-ap', 2],
+    ['in-ml', 2],
+    ['in-pb', 2],
+    ['in-rj', 2],
+    ['in-up', 2],
+    ['in-ut', 2],
+    ['in-jh', 2]
+];*/
+var data = [
+    ['madhya pradesh', 0],
+    ['uttar pradesh', 1],
+    ['karnataka', 0],
+    ['nagaland', 0],
+    ['bihar', 0],
+    ['lakshadweep', 0],
+    ['andaman and nicobar', 0],
+    ['assam', 0],
+    ['west bengal', 1],
+    ['puducherry', 1],
+    ['daman and diu', 0],
+    ['gujarat', 1],
+    ['rajasthan', 0],
+    ['dadara and nagar havelli', 0],
+    ['chhattisgarh', 0],
+    ['tamil nadu', 1],
+    ['chandigarh', 1],
+    ['punjab', 1],
+    ['haryana', 0],
+    ['andhra pradesh', 0],
+    ['maharashtra', 1],
+    ['himachal pradesh', 1],
+    ['meghalaya', 0],
+    ['kerala', 1],
+    ['telangana', 0],
+    ['mizoram', 0],
+    ['tripura', 0],
+    ['manipur', 0],
+    ['arunanchal pradesh', 0],
+    ['jharkhand', 1],
+    ['goa', 0],
+    ['nct of delhi', 1],
+    ['odisha', 0],
+    ['jammu and kashmir', 0],
+    ['sikkim', 0],
+    ['uttarakhand', 1]
+];
+var city_data = {
+    'Punjab': 'Ludhiana<br>Amritsar',
+    'Kerala': 'Malappuram',
+    'Jharkhand': 'Bokaro',
+    'West Bengal': 'Kolkata',
+    'Maharashtra': 'Mumbai',
+    'Uttarakhand': 'Dehradun',
+    'Himachal Pradesh': 'Shimla<br>Dharamshala<br>Solan',
+    'NCT of Delhi': 'New Delhi',
+    'Puducherry': 'Puducherry',
+    'Chandigarh': 'Chandigarh',
+    'Tamil Nadu': 'Hosur',
+    'Uttar Pradesh': 'Baghpat<br>Varanasi',
+    'Gujarat': 'Ahmedabad'
+};
+// Create the chart
+Highcharts.mapChart('container', {
+    chart: {
+        map: 'countries/in/custom/in-all-disputed',
+        backgroundColor: 'transparent',
+        animation: 3000
+    },
+
+    title: {
+        text: ''
+    },
+
+    subtitle: {
+        text: ''
+    },
+    colors: ['#FDF7E8','#0B4F57'],
+    colorAxis: {
+        min: 0,
+        max: 33,
+        dataClassColor: 'category',
+        dataClasses: [{
+                    from: 0,
+                    to: 1
+                }, {
+                    from: 1,
+                    to: 2
+                }]
+    },
+    plotOptions: {
+        map: {
+          borderColor: '#363636'
+        }
+    },
+    tooltip: {
+       formatter: function(){
+           var x = this.point.name;
+           console.log(x);
+           if(!city_data[x]){
+                return '<b>'+x+'</b>:<br>'+'No one from here';
+           }
+           return '<b>'+x+'</b>:<br>'+ city_data[x];
+            }
+    },
+    series: [{
+        data: data,
+        name: 'Our Team',
+        states: {
+            hover: {
+                color: '#0B4F57'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+        },
+        tooltip: {
+                pointFormat: '{point.name}'
+            }
+    }]
+});
+
+</script>

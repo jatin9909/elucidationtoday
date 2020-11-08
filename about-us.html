@@ -447,13 +447,155 @@ She used to often think that her life would have changed if somebody had enlight
                 </a>
             </div>
          </div>
-        <div>
-            <div class="diversity-gif">
-                <video autoplay loop muted>
-                    <source src="static/images/diversity.mp4" type="video/mp4">
-                </video>
+        <div class="columns is-vcentered">
+            <div id="diversity-map" class="column is-4 diversity-gif">
+<!-- MAP CODE -->
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.js"></script>
+
+<style type="text/css">
+#container {
+    margin: 0 auto; 
+}
+.highcharts-data-label-color-0{
+    display: none;  
+}
+.highcharts-data-label-color-1 text tspan{
+    font-size: 7px;
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+.highcharts-credits, .highcharts-exporting-group, .highcharts-legend{
+    display: none;
+}
+</style>
+
+<div id="container"></div>
+
+
+<script type="text/javascript">
+var data = [
+    ['madhya pradesh', 0],
+    ['uttar pradesh', 1],
+    ['karnataka', 0],
+    ['nagaland', 0],
+    ['bihar', 0],
+    ['lakshadweep', 0],
+    ['andaman and nicobar', 0],
+    ['assam', 0],
+    ['west bengal', 1],
+    ['puducherry', 1],
+    ['daman and diu', 0],
+    ['gujarat', 1],
+    ['rajasthan', 0],
+    ['dadara and nagar havelli', 0],
+    ['chhattisgarh', 0],
+    ['tamil nadu', 1],
+    ['chandigarh', 1],
+    ['punjab', 1],
+    ['haryana', 0],
+    ['andhra pradesh', 0],
+    ['maharashtra', 1],
+    ['himachal pradesh', 1],
+    ['meghalaya', 0],
+    ['kerala', 1],
+    ['telangana', 0],
+    ['mizoram', 0],
+    ['tripura', 0],
+    ['manipur', 0],
+    ['arunanchal pradesh', 0],
+    ['jharkhand', 1],
+    ['goa', 0],
+    ['nct of delhi', 1],
+    ['odisha', 0],
+    ['jammu and kashmir', 0],
+    ['sikkim', 0],
+    ['uttarakhand', 1]
+];
+var city_data = {
+    'Punjab': 'Ludhiana<br>Amritsar',
+    'Kerala': 'Malappuram',
+    'Jharkhand': 'Bokaro',
+    'West Bengal': 'Kolkata',
+    'Maharashtra': 'Mumbai',
+    'Uttarakhand': 'Dehradun',
+    'Himachal Pradesh': 'Shimla<br>Dharamshala<br>Solan',
+    'NCT of Delhi': 'New Delhi',
+    'Puducherry': 'Puducherry',
+    'Chandigarh': 'Chandigarh',
+    'Tamil Nadu': 'Hosur',
+    'Uttar Pradesh': 'Baghpat<br>Varanasi',
+    'Gujarat': 'Ahmedabad'
+};
+// Create the chart
+Highcharts.mapChart('container', {
+    chart: {
+        map: 'countries/in/custom/in-all-disputed',
+        backgroundColor: 'transparent',
+        animation: 3000
+    },
+
+    title: {
+        text: ''
+    },
+
+    subtitle: {
+        text: ''
+    },
+    colors: ['#FDF7E8','#0B4F57'],
+    colorAxis: {
+        min: 0,
+        max: 33,
+        dataClassColor: 'category',
+        dataClasses: [{
+                    from: 0,
+                    to: 1
+                }, {
+                    from: 1,
+                    to: 2
+                }]
+    },
+    plotOptions: {
+        map: {
+          borderColor: '#363636'
+        }
+    },
+    tooltip: {
+       formatter: function(){
+           var x = this.point.name;
+           console.log(x);
+           if(!city_data[x]){
+                return '<b>'+x+'</b>:<br>'+'No one from here';
+           }
+           return '<b>'+x+'</b>:<br>'+ city_data[x];
+            }
+    },
+    series: [{
+        data: data,
+        name: 'Our Team',
+        states: {
+            hover: {
+                color: '#0B4F57'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+        },
+        tooltip: {
+                pointFormat: '{point.name}'
+            }
+    }]
+});
+
+</script>
+<!-- MAP CODE -->
             </div>
-            <div class="diversity-text">
+            <div class="column diversity-text">
                 <p>
                     We have a diverse team.
                 </p>
