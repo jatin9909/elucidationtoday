@@ -107,15 +107,15 @@
 	  		action: [
 	  		{
 	  			text: "I need to hire a few people for X position in my company. How can Elucidation Today help me?",
-	  			value: "Elucidation Today will present a list of trained and skilled candidates with you once you share your requirements with us. We can also assist you in the hiring procedure if you want. We have a pool of candidates who are willing to intern, and those who are willing to work full time. Reach out to us [here](https://elucidationtoday.com/index.html#contact)."
+	  			value: "Elucidation Today will present a list of trained and skilled candidates with you once you share your requirements with us. We can also assist you in the hiring procedure if you want. We have a pool of candidates who are willing to intern, and those who are willing to work full time. Reach out to us [here](https://elucidationtoday.com/index#contact)."
 	  		},
 	  		{
 	  			text: "I am a school student and do not know what career I want. Can Elucidation Today help me?",
-	  			value: "Yes! At Elucidation Today, we specialize in providing accurate information to students who are not sure about their future options. We will discuss your interests with you and will help you find your calling. [You should book your one-on-one session](https://elucidationtoday.com/index.html#contact) right now!"
+	  			value: "Yes! At Elucidation Today, we specialize in providing accurate information to students who are not sure about their future options. We will discuss your interests with you and will help you find your calling. [You should book your one-on-one session](https://elucidationtoday.com/index#contact) right now!"
 	  		},
 	  		{
 	  			text: "I am in college right now. I want to study abroad for my masters, but I don’t know which college would be best for me. Can Elucidation Today help me?",
-	  			value: "Yes! We mentor students just like yourself. All you need to have is a firm determination to study abroad and we will have you covered. [Join us in a personal session now](https://elucidationtoday.com/index.html#contact) and we will layout your options for you."
+	  			value: "Yes! We mentor students just like yourself. All you need to have is a firm determination to study abroad and we will have you covered. [Join us in a personal session now](https://elucidationtoday.com/index#contact) and we will layout your options for you."
 	  		},
 	  		{
 	  			text: "I am a working professional. Can Elucidation Today help me in getting a higher paying job?",
@@ -131,15 +131,15 @@
 	  		},
 	  		{
 	  			text: "My job requires me to interact with a lot of people but I am not very good at communicating. Can I improve my communication skills with Elucidation Today?",
-	  			value: "Yes! Our main goal at Elucidation Today is to develop real-life skills in students and working professionals alike. You can either be a participant of our communication workshop of limited seats, or you can book a one-on-one session with us and we will help you be a better communicator at your workplace. contact us [here](https://elucidationtoday.com/index.html#contact)"
+	  			value: "Yes! Our main goal at Elucidation Today is to develop real-life skills in students and working professionals alike. You can either be a participant of our communication workshop of limited seats, or you can book a one-on-one session with us and we will help you be a better communicator at your workplace. contact us [here](https://elucidationtoday.com/index#contact)"
 	  		},
 	  		{
 	  			text: "I teach subject X. I want my students to have knowledge of career options in this subject and know how the industry functions, so that they can make informed career choices. How should I go about it?",
-	  			value: "We can help you in this by organizing a skill development and career awareness workshop with your students where we will share well-researched options of a career in your subject and will take questions from the students at the end. The skill development session will help students test their learning on live projects. You should [contact us](https://elucidationtoday.com/index.html#contact) for the session at the earliest!"
+	  			value: "We can help you in this by organizing a skill development and career awareness workshop with your students where we will share well-researched options of a career in your subject and will take questions from the students at the end. The skill development session will help students test their learning on live projects. You should [contact us](https://elucidationtoday.com/index#contact) for the session at the earliest!"
 	  		},
 	  		{
 	  			text: "Getting a job/handling a business requires problem-solving skills. How to work on enhancing the problem solving capabilities of our students?",
-	  			value: "Problem-solving is one of the most important skills in any job and we provide an extensive workshop on the same. For our problem-solving workshop, we have designed an application-based curriculum which allows students to learn the complexities of problem-solving with real-life examples and exercises for an accurate understanding of the skill. You should [contact us](https://elucidationtoday.com/index.html#contact) to discuss the details of the workshop."
+	  			value: "Problem-solving is one of the most important skills in any job and we provide an extensive workshop on the same. For our problem-solving workshop, we have designed an application-based curriculum which allows students to learn the complexities of problem-solving with real-life examples and exercises for an accurate understanding of the skill. You should [contact us](https://elucidationtoday.com/index#contact) to discuss the details of the workshop."
 	  		},
 	  		{
 	  			text: "As a teacher, I feel that I have great command over the content that I teach. But my students are not performing well. How do I get through this?",
@@ -147,7 +147,7 @@
 	  		},
 	  		{
 	  			text: "I keep getting some amazing ideas to build a startup, but I don’t know how to build upon those ideas. What do I do?",
-	  			value: "We have a Startup Guidance Program, where we mentor future entrepreneurs like yourself. In this program, we offer to analyze the feasibility, actionability, and profitability of your startup idea. Additionally, we will connect you with chartered accountants, financial advisors, legal experts, and experienced entrepreneurs who will advise you on the startup idea at every stage of its development. From ideation to implementation, we hold your hand. Read more about this [here](https://elucidationtoday.com/index.html#contact)"
+	  			value: "We have a Startup Guidance Program, where we mentor future entrepreneurs like yourself. In this program, we offer to analyze the feasibility, actionability, and profitability of your startup idea. Additionally, we will connect you with chartered accountants, financial advisors, legal experts, and experienced entrepreneurs who will advise you on the startup idea at every stage of its development. From ideation to implementation, we hold your hand. Read more about this [here](https://elucidationtoday.com/index#contact)"
 	  		},
 	  		{
 	  			text: "I am extremely stressed during exams. How do I tackle exam stress?",
@@ -155,7 +155,7 @@
 	  		},
 	  		{
 	  			text: "I want to choose stream A but my parents want me to take up stream B. How do I convince them?",
-	  			value: "If you have a different choice of a stream than your parents, do not stress out. [Contact us](https://elucidationtoday.com/index.html#contact) for a session and we will talk to you and your parents. We shall together use tools such as SWOT analysis to weigh the pros and cons of your chosen stream. You can trust us that we will make the best case for you."
+	  			value: "If you have a different choice of a stream than your parents, do not stress out. [Contact us](https://elucidationtoday.com/index#contact) for a session and we will talk to you and your parents. We shall together use tools such as SWOT analysis to weigh the pros and cons of your chosen stream. You can trust us that we will make the best case for you."
 	  		},
 	  		{
 	  			text: "What is the right age at which I should enrol my child for your sessions?",
@@ -177,7 +177,7 @@
 	  		action: [
 	  		{
 	  			text: "We want to train our new joiners and upskill our existing workforce. How can Elucidation Today help?",
-	  			value: "Elucidation Today is committed towards the skill development of employees so that they are up-to-date with the technologies and tools. Ranging from MS-Excel and coding to soft skills, we have it all covered. [Contact us](https://elucidationtoday.com/index.html#contact) and we will curate a skill development module(s) exclusively for your company/organization."
+	  			value: "Elucidation Today is committed towards the skill development of employees so that they are up-to-date with the technologies and tools. Ranging from MS-Excel and coding to soft skills, we have it all covered. [Contact us](https://elucidationtoday.com/index#contact) and we will curate a skill development module(s) exclusively for your company/organization."
 	  		},
 	  		{
 	  			text: "We would like to collaborate on a webinar for our college. Can Elucidation Today organize one?",

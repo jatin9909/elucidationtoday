@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176428633-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-176428633-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="icon" href="static/images/logo.png">  
+    
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-steps@2.2.1/dist/css/bulma-steps.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/elucidation.css">
+
+
+    
+    <title>Elucidation Today</title>
+  </head>
+  <body>
+  	<div id="page_loader">
+	</div>
+
+  	<nav class="navbar is-fixed-top is-transparent">
+  		<div class="container">
+	  		<div class="navbar-brand">
+	  			<a class="navbar-item logo" href="index.html">
+	  				<img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+	  				<img src="static/images/logo_full.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+	  			</a>
+	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
+		      		<span></span>
+		      		<span></span>
+		      		<span></span>
+	    		</span>
+	  		</div>
+	  		<div class="navbar-menu" id="navbarMenuHero">
+	  			<div class="navbar-end">
+	  				<a class="navbar-item" href="index.html">Elucidation Today</a>
+	  				<a class="navbar-item" href="about-us.html">About</a>
+
+		 			<div class="navbar-item has-text-centered has-dropdown is-hoverable">
+		 				<a class="navbar-link is-arrowless" href="services.html">Services</a>
+		 				<div class="navbar-dropdown is-boxed is-right">
+							<a class="services-link navbar-item" href="services.html#career">Career Awareness</a>
+		 					<a class="services-link navbar-item" href="services.html#skills">Skill Development</a>
+		 					
+		 					<a class="services-link navbar-item" href="services.html#mentor">Mentorship</a>
+		 					<a class="services-link navbar-item" href="services.html#startup">Startup Guidance</a>
+		 					<a class="services-link navbar-item" href="services.html#faculty">Faculty Training</a>
+
+
+		 				</div>
+		 			</div>
+
+
+                    <div class="navbar-item has-text-centered has-dropdown is-hoverable">
+                        <a class="navbar-link is-arrowless">More 
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" id="more-link" aria-hidden="true"></i>
+                              </span>
+                        </a>
+                        <div class="navbar-dropdown is-boxed is-right">
+                            <a class="services-link navbar-item" href="blog.html">Blogs</a>
+                            <a class="services-link navbar-item" href="workshop.html">SNAP</a>
+                            <a class="services-link navbar-item" href="mentors.html">Mentors</a>
+                            <a class="services-link navbar-item " href="index.html#contact">Contact</a>
+
+                        </div>
+                    </div>
+		 			
+	 		    </div>
+
+  			</div>
+  		</div>
+
+  		
+  		
+	</nav>
+	<!--END NAVBAR-->
+	<section class="workshop-title has-text-centered">
+		<div class="title">
+			<h3>SNAP Workshop Application</h3>
+		</div>
+	</section>
+	<!-- Begin Snap Form -->
+	<section class="workshop-form">
+	  <form class="control" id="workshopForm" name="workshop_form" action="" enctype="multipart/form-data">
+	  	<fieldset>
+		<div class="steps" id="stepsDemo">
+		  <div class="step-item">
+		    <div class="step-marker">1</div>
+		    <div class="step-details">
+		      <p class="step-title">Personal Details</p>
+		    </div>
+		  </div>
+		  <div class="step-item">
+		    <div class="step-marker">2</div>
+		    <div class="step-details">
+		      <p class="step-title">Education</p>
+		    </div>
+		  </div>
+		  <div class="step-item">
+		    <div class="step-marker">3</div>
+		    <div class="step-details">
+		      <p class="step-title">Descriptive Questions</p>
+		    </div>
+		  </div>
+		  <div class="step-item">
+		    <div class="step-marker">4</div>
+		    <div class="step-details">
+		      <p class="step-title">Tell us more</p>
+		    </div>
+		  </div>
+		  <div class="step-item">
+		    <div class="step-marker">5</div>
+		    <div class="step-details">
+		      <p class="step-title">Submit</p>
+		    </div>
+		  </div>
+		  <div class="steps-content">
+		    <div class="step-content column is-4 is-offset-4 has-text-centered is-active">
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Name</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control">
+		              <input class="input" name="name" id="name" type="text" placeholder="Full Name" autofocus data-validate="require">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Date of Birth</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control has-icon has-icons-left">
+		              <input class="input datepicker_date" type="text" name="dob" id="dob" placeholder="Date of Birth" data-validate="require" autocomplete="off">
+		              <span class="icon is-small is-left">
+                       <i class="fa fa-calendar"></i>
+                      </span>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Email</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field has-icons-left">
+		            <div class="control has-icon has-icons-left">
+		              <input class="input" type="email" name="email" id="email" placeholder="Email" data-validate="require">
+		              <span class="icon is-small is-left">
+                       <i class="fa fa-envelope"></i>
+                      </span>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Contact Number</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control has-icon has-icons-left">
+		              <input class="input" type="number" name="phone" id="phone" placeholder="Contact Number" data-validate="require">
+		              <span class="icon is-small is-left">
+                       <i class="fa fa-mobile"></i>
+                      </span>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Address</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control has-icon has-icon-right">
+		              <textarea class="input" type="text" name="address" id="address" placeholder="Address" data-validate="require"></textarea>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="step-content column is-4 is-offset-4  has-text-centered">
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Course / Standard</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control">
+		              <input class="input" name="course" id="course" type="text" placeholder="Course / Standard" autofocus data-validate="require">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">College / School</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control has-icon has-icon-right">
+		              <input class="input" type="text" name="college" id="college" placeholder="College / School" data-validate="require">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">University / Board</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control has-icon has-icon-right">
+		              <input class="input" type="text" name="university" id="university" placeholder="University / Board" data-validate="require">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field working-field">
+				<input class="is-checkradio is-circle is-success" id="working" type="checkbox" name="working" onchange="changeStatus(this, '.working-block')">
+				<label for="working">Are you working ?</label>
+			  </div>
+			  <div class="working-block">
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Domain</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control">
+		              <input class="input" name="domain" id="domain" type="text" placeholder="Domain" autofocus data-validate="require">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Company Name</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control">
+		              <input class="input" name="company" id="company" type="text" placeholder="Company Name" autofocus data-validate="require">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Work Experience</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control">
+		              <input class="input" name="workex" id="workex" type="number" placeholder="Work Experience (In years)" autofocus data-validate="require">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		  	  </div>
+		    </div>
+		    <div class="step-content column is-8 is-offset-2 has-text-centered add-ons">
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">What are your career interests? ( This question will not affect your candidature )</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control has-icon has-icon-right">
+		              <textarea class="input" name="careerInterests" id="careerInterests" placeholder="" data-validate="require"></textarea>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <div class="field-label is-normal">
+		          <label class="label">Why do you want to join the SNAP program? How does this program meet your future goals?<br> (250-400 Words)</label>
+		        </div>
+		        <div class="field-body">
+		          <div class="field">
+		            <div class="control has-icon has-icon-right">
+		              <textarea class="input" name="whySNAP" id="whySNAP" placeholder="" data-validate="require" maxlength="3000"></textarea>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+			  <div id="file-js-example" class="file has-name">
+			  	<div class="field-label is-normal">
+			  		<label class="label">
+			  			Upload one of your writing sample <b>[If Any]</b><br>(Max 500 Words)
+			  		</label>
+					<label class="file-label">
+					  <input class="file-input" type="file">
+					  <input type="hidden" name="writingSample" id="writingSample" value="temp">
+					  <input type="hidden" id="fileContent" name="fileContent">
+					  <input type="hidden" id="fileName" name="fileName">
+					  <span class="file-cta">
+					    <span class="file-icon">
+					      <i class="fas fa-upload"></i>
+					    </span>
+					    <span class="file-label">
+					      Choose a file…
+					    </span>
+					  </span>
+					  <span class="file-name">
+      					No file uploaded ( .docx / .doc / .odt / .txt )
+    				  </span>
+					</label>
+			  	</div>
+			  </div>
+		    </div>
+		    <div class="step-content column is-8 is-offset-2 tick-boxes-block has-text-centered">
+				<div class="field">
+				  <label for="">Mark according to your skillset (this is to understand your level of proficiency and will not be considered for short listing the applications)<br><br>1-New 2-Familiar 3-Intermediate 4-Skilled<br><br></label>
+				</div>
+				<div class="field heading-label">
+					<label>Content Writing</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How comfortable are you with the English language and its grammatical rules?</label>
+				  <input class="is-checkradio" id="Radio1.1" type="radio" value="1" name="english_language">
+				  <label for="Radio1.1">1</label>
+				  <input class="is-checkradio" id="Radio1.2" type="radio" value="2" name="english_language">
+				  <label for="Radio1.2">2</label>
+				  <input class="is-checkradio" id="Radio1.3" type="radio" value="3" name="english_language">
+				  <label for="Radio1.3">3</label>
+				  <input class="is-checkradio" id="Radio1.4" type="radio" value="4" name="english_language">
+				  <label for="Radio1.4">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">Do you think you can write engaging and relatable content?</label>
+				  <input class="is-checkradio" id="Radio1.1.1" type="radio" value="1" name="engaging_content">
+				  <label for="Radio1.1.1">1</label>
+				  <input class="is-checkradio" id="Radio1.2.1" type="radio" value="2" name="engaging_content">
+				  <label for="Radio1.2.1">2</label>
+				  <input class="is-checkradio" id="Radio1.3.1" type="radio" value="3" name="engaging_content">
+				  <label for="Radio1.3.1">3</label>
+				  <input class="is-checkradio" id="Radio1.4.1" type="radio" value="4" name="engaging_content">
+				  <label for="Radio1.4.1">4</label>
+				</div>
+				<div class="field heading-label">
+					<label>IT Skills</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">Linux (Operating System)</label>
+				  <input class="is-checkradio" id="Radio2.1" type="radio" value="1" name="linux">
+				  <label for="Radio2.1">1</label>
+				  <input class="is-checkradio" id="Radio2.2" type="radio" value="2" name="linux">
+				  <label for="Radio2.2">2</label>
+				  <input class="is-checkradio" id="Radio2.3" type="radio" value="3" name="linux">
+				  <label for="Radio2.3">3</label>
+				  <input class="is-checkradio" id="Radio2.4" type="radio" value="4" name="linux">
+				  <label for="Radio2.4">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">Coding Skills</label>
+				  <input class="is-checkradio" id="Radio2.1.1" type="radio" value="1" name="coding">
+				  <label for="Radio2.1.1">1</label>
+				  <input class="is-checkradio" id="Radio2.2.1" type="radio" value="2" name="coding">
+				  <label for="Radio2.2.1">2</label>
+				  <input class="is-checkradio" id="Radio2.3.1" type="radio" value="3" name="coding">
+				  <label for="Radio2.3.1">3</label>
+				  <input class="is-checkradio" id="Radio2.4.1" type="radio" value="4" name="coding">
+				  <label for="Radio2.4.1">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">Office Tools</label>
+				  <input class="is-checkradio" id="Radio2.1.2" type="radio" value="1" name="office_tools">
+				  <label for="Radio2.1.2">1</label>
+				  <input class="is-checkradio" id="Radio2.2.2" type="radio" value="2" name="office_tools">
+				  <label for="Radio2.2.2">2</label>
+				  <input class="is-checkradio" id="Radio2.3.2" type="radio" value="3" name="office_tools">
+				  <label for="Radio2.3.2">3</label>
+				  <input class="is-checkradio" id="Radio2.4.2" type="radio" value="4" name="office_tools">
+				  <label for="Radio2.4.2">4</label>
+				</div>
+				<div class="field heading-label">
+					<label>Digital Marketing</label>
+				</div>
+				<div class="field">
+				  <label class="title-label"></label>
+				  <input class="is-checkradio" id="Radio3.1" type="radio" value="1" name="digitalMarketing">
+				  <label for="Radio3.1">1</label>
+				  <input class="is-checkradio" id="Radio3.2" type="radio" value="2" name="digitalMarketing">
+				  <label for="Radio3.2">2</label>
+				  <input class="is-checkradio" id="Radio3.3" type="radio" value="3" name="digitalMarketing">
+				  <label for="Radio3.3">3</label>
+				  <input class="is-checkradio" id="Radio3.4" type="radio" value="4" name="digitalMarketing">
+				  <label for="Radio3.4">4</label>
+				</div>
+				<div class="field heading-label">
+					<label>Communication</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How impressive are you in video communication?</label>
+				  <input class="is-checkradio" id="Radio4.1" type="radio" value="1" name="impressive_communication">
+				  <label for="Radio4.1">1</label>
+				  <input class="is-checkradio" id="Radio4.2" type="radio" value="2" name="impressive_communication">
+				  <label for="Radio4.2">2</label>
+				  <input class="is-checkradio" id="Radio4.3" type="radio" value="3" name="impressive_communication">
+				  <label for="Radio4.3">3</label>
+				  <input class="is-checkradio" id="Radio4.4" type="radio" value="4" name="impressive_communication">
+				  <label for="Radio4.4">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How good are you at email writing?</label>
+				  <input class="is-checkradio" id="Radio4.1.1" type="radio" value="1" name="email_writing">
+				  <label for="Radio4.1.1">1</label>
+				  <input class="is-checkradio" id="Radio4.2.1" type="radio" value="2" name="email_writing">
+				  <label for="Radio4.2.1">2</label>
+				  <input class="is-checkradio" id="Radio4.3.1" type="radio" value="3" name="email_writing">
+				  <label for="Radio4.3.1">3</label>
+				  <input class="is-checkradio" id="Radio4.4.1" type="radio" value="4" name="email_writing">
+				  <label for="Radio4.4.1">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How well can you provide and receive feedback?</label>
+				  <input class="is-checkradio" id="Radio4.1.2" type="radio" value="1" name="feedback">
+				  <label for="Radio4.1.2">1</label>
+				  <input class="is-checkradio" id="Radio4.2.2" type="radio" value="2" name="feedback">
+				  <label for="Radio4.2.2">2</label>
+				  <input class="is-checkradio" id="Radio4.3.2" type="radio" value="3" name="feedback">
+				  <label for="Radio4.3.2">3</label>
+				  <input class="is-checkradio" id="Radio4.4.2" type="radio" value="4" name="feedback">
+				  <label for="Radio4.4.2">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How aware are you of cognitive biases involved in communication?</label>
+				  <input class="is-checkradio" id="Radio4.1.3" type="radio" value="1" name="cognitive_biases">
+				  <label for="Radio4.1.3">1</label>
+				  <input class="is-checkradio" id="Radio4.2.3" type="radio" value="2" name="cognitive_biases">
+				  <label for="Radio4.2.3">2</label>
+				  <input class="is-checkradio" id="Radio4.3.3" type="radio" value="3" name="cognitive_biases">
+				  <label for="Radio4.3.3">3</label>
+				  <input class="is-checkradio" id="Radio4.4.3" type="radio" value="4" name="cognitive_biases">
+				  <label for="Radio4.4.3">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How would you rate yourself as a communicator?</label>
+				  <input class="is-checkradio" id="Radio4.1.4" type="radio" value="1" name="communicator">
+				  <label for="Radio4.1.4">1</label>
+				  <input class="is-checkradio" id="Radio4.2.4" type="radio" value="2" name="communicator">
+				  <label for="Radio4.2.4">2</label>
+				  <input class="is-checkradio" id="Radio4.3.4" type="radio" value="3" name="communicator">
+				  <label for="Radio4.3.4">3</label>
+				  <input class="is-checkradio" id="Radio4.4.4" type="radio" value="4" name="communicator">
+				  <label for="Radio4.4.4">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How proficient are you in pitching?</label>
+				  <input class="is-checkradio" id="Radio4.1.5" type="radio" value="1" name="pitching">
+				  <label for="Radio4.1.5">1</label>
+				  <input class="is-checkradio" id="Radio4.2.5" type="radio" value="2" name="pitching">
+				  <label for="Radio4.2.5">2</label>
+				  <input class="is-checkradio" id="Radio4.3.5" type="radio" value="3" name="pitching">
+				  <label for="Radio4.3.5">3</label>
+				  <input class="is-checkradio" id="Radio4.4.5" type="radio" value="4" name="pitching">
+				  <label for="Radio4.4.5">4</label>
+				</div>
+				<div class="field heading-label">
+					<label>Soft Skills</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How well do you manage your time?</label>
+				  <input class="is-checkradio" id="Radio5.1" type="radio" value="1" name="time_manage">
+				  <label for="Radio5.1">1</label>
+				  <input class="is-checkradio" id="Radio5.2" type="radio" value="2" name="time_manage">
+				  <label for="Radio5.2">2</label>
+				  <input class="is-checkradio" id="Radio5.3" type="radio" value="3" name="time_manage">
+				  <label for="Radio5.3">3</label>
+				  <input class="is-checkradio" id="Radio5.4" type="radio" value="4" name="time_manage">
+				  <label for="Radio5.4">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How good are your observation skills?</label>
+				  <input class="is-checkradio" id="Radio5.1.1" type="radio" value="1" name="observation_skills">
+				  <label for="Radio5.1.1">1</label>
+				  <input class="is-checkradio" id="Radio5.2.1" type="radio" value="2" name="observation_skills">
+				  <label for="Radio5.2.1">2</label>
+				  <input class="is-checkradio" id="Radio5.3.1" type="radio" value="3" name="observation_skills">
+				  <label for="Radio5.3.1">3</label>
+				  <input class="is-checkradio" id="Radio5.4.1" type="radio" value="4" name="observation_skills">
+				  <label for="Radio5.4.1">4</label>
+				</div>
+				<div class="field">
+				  <label class="title-label">How would you rate your creative thinking and critical thinking skills?</label>
+				  <input class="is-checkradio" id="Radio5.1.2" type="radio" value="1" name="creative_critical">
+				  <label for="Radio5.1.2">1</label>
+				  <input class="is-checkradio" id="Radio5.2.2" type="radio" value="2" name="creative_critical">
+				  <label for="Radio5.2.2">2</label>
+				  <input class="is-checkradio" id="Radio5.3.2" type="radio" value="3" name="creative_critical">
+				  <label for="Radio5.3.2">3</label>
+				  <input class="is-checkradio" id="Radio5.4.2" type="radio" value="4" name="creative_critical">
+				  <label for="Radio5.4.2">4</label>
+				</div>
+				<div class="field heading-label">
+					<label>Resume Building</label>
+				</div>
+				<div class="field">
+				  <label class="title-label"></label>
+				  <input class="is-checkradio" id="Radio6.1" type="radio" value="1" name="resumeBuilding">
+				  <label for="Radio6.1">1</label>
+				  <input class="is-checkradio" id="Radio6.2" type="radio" value="2" name="resumeBuilding">
+				  <label for="Radio6.2">2</label>
+				  <input class="is-checkradio" id="Radio6.3" type="radio" value="3" name="resumeBuilding">
+				  <label for="Radio6.3">3</label>
+				  <input class="is-checkradio" id="Radio6.4" type="radio" value="4" name="resumeBuilding">
+				  <label for="Radio6.4">4</label>
+				</div>
+				<div class="field heading-label">
+					<label>Group Discussion</label>
+				</div>
+				<div class="field">
+				  <label class="title-label"></label>
+				  <input class="is-checkradio" id="Radio7.1" type="radio" value="1" name="groupDiscussion">
+				  <label for="Radio7.1">1</label>
+				  <input class="is-checkradio" id="Radio7.2" type="radio" value="2" name="groupDiscussion">
+				  <label for="Radio7.2">2</label>
+				  <input class="is-checkradio" id="Radio7.3" type="radio" value="3" name="groupDiscussion">
+				  <label for="Radio7.3">3</label>
+				  <input class="is-checkradio" id="Radio7.4" type="radio" value="4" name="groupDiscussion">
+				  <label for="Radio7.4">4</label>
+				</div>
+		    </div>
+    		<div class="step-content has-text-centered">
+				<div class="field">
+				  <input class="is-checkradio" id="declaration" type="checkbox" name="declaration" onchange="changeStatus(this, '.submit-block')">
+				  <label for="declaration">I hereby declare that the information furnished in this form is true, complete and correct to the best of my knowledge and belief. I understand that in the event of my information being found false or incorrect at any stage, my candidature shall be liable to cancellation / termination without notice or any compensation in lieu thereof.</label>
+				</div>
+				<div class="submit-block">
+    			</div>
+    		</div>
+		  </div>
+		  <div class="steps-actions">
+		    <div class="steps-action">
+		      <a href="#" data-nav="previous" disabled class="button is-light">Previous</a>
+		    </div>
+		    <div class="steps-action">
+		      <a href="#" data-nav="next" class="button is-light">Next</a>
+		    </div>
+		  </div>
+		</div>
+		</fieldset>
+	  </form>
+	    <div class="queries-block">
+	    	<span>for queries, mail us at <a href="mailto:contact@elucidationtoday.com">contact@elucidationtoday.com</a></span>
+	    </div>
+	</section>
+	<footer class="footer has-background-dark" id="socials">
+		<div class="columns is-vcentered">
+			<div class="column is-4 is-offset-4 has-text-centered">
+				
+				<a class="social" href="https://www.instagram.com/elucidation_today/" alt="@elucidation_today">
+					<span class="icon">
+						<i class="fab fa-instagram fa-2x"></i>
+					</span>
+				</a>
+				<a class="social" href="mailto:contact@elucidationtoday.com" alt="contact@elucidationtoday.com">
+					<span class="icon">
+						<i class="far fa-envelope fa-2x"></i>
+					</span>
+				</a>
+				<a class="social" href="https://www.linkedin.com/company/elucidation-today" alt="linkedin">
+					<span class="icon">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</span>
+				</a>
+				
+				
+
+			</div>
+		</div>
+		</footer>
+		<a id="go-to-top"></a>
+
+  </body>
+	<script src="https://cdn.jsdelivr.net/npm/bulma-steps@2.2.1/dist/js/bulma-steps.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>	
+    <script type="text/javascript" src="static/js/elucidation.js"></script>
+    <script type="text/javascript" src="static/js/workshop.js"></script>
+
+
+      <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+	<script type="text/javascript">	
+	      $(document).ready(function() {
+	        var date_input = $('.datepicker_date');
+	        var container =
+	          $(".bootstrap-iso form").length > 0
+	            ? $(".bootstrap-iso form").parent()
+	            : "body";
+	        date_input.datepicker({
+	          format: "yyyy-mm-dd",
+	          container: container,
+	          todayHighlight: true,
+	          autoclose: true,
+	          endDate: "today",
+	          orientation: "top"
+	        });
+	      });
+	</script>
+	
+</html>
