@@ -378,7 +378,7 @@ Abhishek CSS
 
 #go-to-top {
   display: inline-block;
-  background-image: url('../images/top.svg');
+  background-image: url('../images/top.png');
   -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
   width: 50px;
@@ -717,6 +717,14 @@ Abhishek CSS
 
 .mentors-pen{
  }
+.mentors-details img{
+  border-radius: 50%;
+  height: 150px;
+  margin-right: 10px;
+}
+.mentors-details .level.is-mobile .level-item{
+  margin:0;
+}
 .be-mentor-img img{
   max-height: 350px;
  }
@@ -724,7 +732,15 @@ Abhishek CSS
    color: #FFF;
    border-radius: 20px; 
 }
-
+@media only screen and (max-width: 768px){
+  .mentors-details .text-detail{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .mentors-details img{
+    margin-right: 0;
+  }
+}
 /* Mentors */
 
 
@@ -926,7 +942,4 @@ Abhishek CSS
 }
 #more-link:hover{
   color:  #EA526F !important;
-}
-#kaveri{
-  border-radius: 50%;
 }

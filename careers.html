@@ -14,13 +14,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="title" content="About • Elucidation Today">
-<meta name="keywords" content="Team Elucidation Today, edtech startup, employable">
+<meta name="keywords" content="Team Elucidation Today, edtech startup, employable, internship elucidation today, jobs in elucidation today">
 <meta name="description" content="Elucidation Today is more than just the name of a venture. It is a representation of countless people who dare to dream, who seek a bright future. Team of Elucidation Today">
 
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-<link rel="icon" href="static/images/logo.png">
+<link rel="icon" href="static/images/logo_fav.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -37,8 +37,16 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item logo" href="index">
-          <img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
-          <img src="static/images/logo_full.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+          <picture>
+            <source type="image/webp" srcset="static/webp_images/logo.webp">
+            <source type="image/png" srcset="static/images/logo.png">
+            <img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="static/webp_images/logo_full.webp">
+            <source type="image/png" srcset="static/images/logo_full.png">
+            <img src="static/images/logo_full.png" id="logo_full" onmouseout="unhover(document.getElementById('logo'), this)">
+          </picture>
         </a>
         <span class="navbar-burger burger"data-target="navbarMenuHero">
           <span></span>
@@ -112,8 +120,11 @@
   <section class="section is-main">
     <div class="column" data-aos="fade-up">
       <div class="bg-img level-item">
-        <img id="first-pic" src="static/images/careers/Picture1.png">
-
+        <picture>
+          <source type="image/webp" srcset="static/webp_images/careers/Picture1.webp">
+          <source type="image/png" srcset="static/images/careers/Picture1.png">
+          <img src="static/images/careers/Picture1.png">
+        </picture>
       </div>
 
     </div>
@@ -223,7 +234,11 @@
         </div>
       </div>
       <div class="column is-8 is-offset-2 tc-img">
-        <img id="teacher" src="static/images/careers/a.png">
+        <picture>
+          <source type="image/webp" srcset="static/webp_images/careers/a.webp">
+          <source type="image/png" srcset="static/images/careers/a.png">
+          <img src="static/images/careers/a.png" id="teacher">
+        </picture>
       </div>
     </div>
 

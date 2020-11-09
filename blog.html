@@ -18,7 +18,7 @@
     <meta name="description" content="We organize skill development workshops for students in a range of things, to groom their personality and prepare them for their career. The workshops cover topics such as communication, resume building, IT skills, problem solving and design thinking.">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-	<link rel="icon" href="static/images/logo.png">
+	<link rel="icon" href="static/images/logo_fav.png">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -37,8 +37,16 @@
   		<div class="container">
 	  		<div class="navbar-brand">
 	  			<a class="navbar-item logo" href="index">
-	  				<img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
-	  				<img src="static/images/logo_full.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+					<picture>
+					  <source type="image/webp" srcset="static/webp_images/logo.webp">
+					  <source type="image/png" srcset="static/images/logo.png">
+					  <img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+					</picture>
+					<picture>
+					  <source type="image/webp" srcset="static/webp_images/logo_full.webp">
+					  <source type="image/png" srcset="static/images/logo_full.png">
+					  <img src="static/images/logo_full.png" id="logo_full" onmouseout="unhover(document.getElementById('logo'), this)">
+					</picture>
 	  			</a>
 	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
 		      		<span></span>

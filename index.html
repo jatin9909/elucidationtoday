@@ -19,8 +19,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-
-	<link rel="icon" href="static/images/logo.png">  
+	<link rel="icon" href="static/images/logo_fav.png">
 <!-- required for basic layout -->
 	<link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui.min.css">
 <!-- default theme - you can create your own theme -->
@@ -42,8 +41,16 @@
   		<div class="container">
 	  		<div class="navbar-brand">
 	  			<a class="navbar-item logo" href="index">
-	  				<img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
-	  				<img src="static/images/logo_full.png" id="logo_full"  onmouseout="unhover(document.getElementById('logo'), this)">
+					<picture>
+					  <source type="image/webp" srcset="static/webp_images/logo.webp">
+					  <source type="image/png" srcset="static/images/logo.png">
+					  <img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+					</picture>
+					<picture>
+					  <source type="image/webp" srcset="static/webp_images/logo_full.webp">
+					  <source type="image/png" srcset="static/images/logo_full.png">
+					  <img src="static/images/logo_full.png" id="logo_full" onmouseout="unhover(document.getElementById('logo'), this)">
+					</picture>
 	  			</a>
 	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
 		      		<span></span>
@@ -109,7 +116,11 @@
 				
 				<div class="column illust">
 					<figure class="image">
-						<img src="static/images/vision-bw.png" width="75%">
+						<picture>
+						  <source type="image/webp" srcset="static/webp_images/vision-bw.webp">
+						  <source type="image/png" srcset="static/images/vision-bw.png">
+						  <img src="static/images/vision-bw.png">
+						</picture>
 					</figure>
 					
 				</div>
@@ -131,7 +142,11 @@
 			<div class="columns is-vcentered">
 				<div class="column" >
 					<figure class="image illust">
-						<img src="static/images/meditation-bw.png">
+						<picture>
+						  <source type="image/webp" srcset="static/webp_images/meditation-bw.webp">
+						  <source type="image/png" srcset="static/images/meditation-bw.png">
+						  <img src="static/images/meditation-bw.png">
+						</picture>
 					</figure>
 				</div>
 				<div class="column" >
@@ -159,7 +174,11 @@
 				</div>
 				<div class="column">
 					<figure class="image illust">
-						<img src="static/images/success-bw.png">
+						<picture>
+						  <source type="image/webp" srcset="static/webp_images/success-bw.webp">
+						  <source type="image/png" srcset="static/images/sucess-bw.png">
+						  <img src="static/images/sucess-bw.png">
+						</picture>
 					</figure>
 				</div>
 			</div>
@@ -171,7 +190,11 @@
 			<div class="columns is-vcentered">
 				<div class="column">
 					<figure class="image illust">
-						<img src="static/images/idea BW.png">
+						<picture>
+						  <source type="image/webp" srcset="static/webp_images/idea_BW.webp">
+						  <source type="image/png" srcset="static/images/idea_BW.png">
+						  <img src="static/images/idea_BW.png">
+						</picture>
 					</figure>
 				</div>
 				<div class="column">
@@ -199,7 +222,11 @@
 				</div>
 				<div class="column">
 					<figure class="image illust">
-						<img src="static/images/teaching-bw.png">
+						<picture>
+						  <source type="image/webp" srcset="static/webp_images/teaching-bw.webp">
+						  <source type="image/png" srcset="static/images/teaching-bw.png">
+						  <img src="static/images/teaching-bw.png">
+						</picture>
 					</figure>
 				</div>
 			</div>
@@ -235,7 +262,11 @@
 				<div class="item-1">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/kmc.jpg" alt="University of Delhi">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/kmc.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/kmc.jpg">
+							  <img src="static/images/colleges/kmc.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Kirori Mal College, Delhi</li>
@@ -246,7 +277,11 @@
 				<div class="item-2">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/khalsa-ludhiana.jpg" alt="Panjab University">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/khalsa-ludhiana.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/khalsa-ludhiana.jpg">
+							  <img src="static/images/colleges/khalsa-ludhiana.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Khalsa College for Women, Ludhiana</li>
@@ -257,7 +292,11 @@
 				<div class="item-3">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/patkar-varde.png" alt="University of Mumbai">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/patkar-varde.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/patkar-varde.jpg">
+							  <img src="static/images/colleges/patkar-varde.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Patkar Varde College, Goregaon, Mumbai</li>
@@ -268,7 +307,11 @@
 				<div class="item-4">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/de-paul.jpg" alt="Mahatma Gandhi University">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/de-paul.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/de-paul.jpg">
+							  <img src="static/images/colleges/de-paul.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>De Paul Institute of Science & Technology, Angamaly</li>
@@ -279,7 +322,11 @@
 				<div class="item-5">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/rajiv-gandhi-shimla.jpg" alt="Himachal Pradesh University">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/rajiv-gandhi-shimla.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/rajiv-gandhi-shimla.jpg">
+							  <img src="static/images/colleges/rajiv-gandhi-shimla.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Rajiv Gandhi Government Degree College, Kotshera</li>
@@ -290,7 +337,11 @@
 				<div class="item-6">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/hansraj-college.jpg" alt="University of Delhi">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/hansraj-college.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/hansraj-college.jpg">
+							  <img src="static/images/colleges/hansraj-college.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Hansraj College, Delhi</li>
@@ -301,7 +352,11 @@
 				<div class="item-7">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/lsr.png" alt="University of Delhi">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/lsr.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/lsr.jpg">
+							  <img src="static/images/colleges/lsr.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Lady Sri Ram College, Delhi</li>
@@ -312,7 +367,11 @@
 				<div class="item-8">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/guru-nanak-khalsa.jpg" alt="Panjab University">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/guru-nanak-khalsa.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/guru-nanak-khalsa.jpg">
+							  <img src="static/images/colleges/guru-nanak-khalsa.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Guru Nanak Khalsa College of Women, Ludhiana</li>
@@ -323,7 +382,11 @@
 				<div class="item-9">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/drc.jpg" alt="University of Delhi">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/drc.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/drc.jpg">
+							  <img src="static/images/colleges/drc.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>Daulat Ram College, Delhi</li>
@@ -334,7 +397,11 @@
 				<div class="item-10">
 					<div data-aos="fade-right" data-aos-duration="2000">
 						<figure class="image is-128x128">
-							<img src="static/images/colleges/dav.png" alt="CBSE">
+							<picture>
+							  <source type="image/webp" srcset="static/webp_images/colleges/dav.webp">
+							  <source type="image/jpeg" srcset="static/images/colleges/dav.jpg">
+							  <img src="static/images/colleges/dav.jpg">
+							</picture>
 						</figure>
 						<ul>
 							<li>DAV Sr. Sec Public School, New Shimla</li>
@@ -459,7 +526,11 @@
 			<div class="columns is-vcentered">
 				<div class="column">
 					<a href="https://www.facebook.com/watch/?v=688796961976575">
-						<img src="static/images/indiatoday.jpeg" alt="India Today Cover" width="50%" height="auto">
+						<picture>
+						  <source type="image/webp" srcset="static/webp_images/indiatoday.webp">
+						  <source type="image/jpeg" srcset="static/images/indiatoday.jpeg">
+						  <img src="static/images/indiatoday.jpeg" width="50%" height="auto">
+						</picture>
 						<!--div class="overlay">
     						<div class="text">India Today Facebook Page</div>
   						</div-->
@@ -583,8 +654,16 @@
 		<a id="go-to-top"></a>
 		<div class="bot-container">
 			<div class="bot-icon" onclick="displayBot()">
-				<img class="message-icon" src="static/images/faq_icon.png">
-				<img class="cross-icon" src="static/images/cross_circle_1.png">
+				<picture>
+				  <source type="image/webp" srcset="static/webp_images/faq_icon.webp">
+				  <source type="image/png" srcset="static/images/faq_icon.png">
+				  <img src="static/images/faq_icon.png" class="message-icon">
+				</picture>
+				<picture>
+				  <source type="image/webp" srcset="static/webp_images/cross_circle_1.webp">
+				  <source type="image/png" srcset="static/images/cross_circle_1.png">
+				  <img src="static/images/cross_circle_1.png" class="cross-icon">
+				</picture>
 			</div>
 			<div id="my-botui-app" class="bot-app">
 				<div class="bot-header">
