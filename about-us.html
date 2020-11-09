@@ -456,13 +456,11 @@ She used to often think that her life would have changed if somebody had enlight
 
 <style type="text/css">
 #container {
-    margin: 0 auto; 
+    margin: 0 auto;
+    /*background: linear-gradient(180deg, rgba(54,54,54,1) 18%, rgba(0,212,255,1) 100%);*/
 }
 .highcharts-data-label-color-0{
     display: none;  
-}
-.highcharts-data-label-color-1 text tspan{
-    font-size: 7px;
 }
 .loading {
     margin-top: 10em;
@@ -546,7 +544,7 @@ Highcharts.mapChart('container', {
     subtitle: {
         text: ''
     },
-    colors: ['#FDF7E8','#0B4F57'],
+    colors: ['#FDF7E8','#EA526F'],
     colorAxis: {
         min: 0,
         max: 33,
@@ -562,6 +560,12 @@ Highcharts.mapChart('container', {
     plotOptions: {
         map: {
           borderColor: '#363636'
+        }
+    },
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: 'bottom'
         }
     },
     tooltip: {
