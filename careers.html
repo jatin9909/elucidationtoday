@@ -191,6 +191,7 @@
     <div class="column is-8 is-offset-2 has-text-centered" id="job">
       <h1>Open Positions</h1>
     </div>
+    <div class="columns">
     <div class="column is-8 is-offset-2 level" >
       <div class="columns has-text-left">
         <div class="column ">
@@ -233,24 +234,74 @@
           </div>
         </div>
       </div>
-      <div class="column is-8 is-offset-2 tc-img">
-        <picture>
-          <source type="image/webp" srcset="static/webp_images/careers/a.webp">
-          <source type="image/png" srcset="static/images/careers/a.png">
-          <img src="static/images/careers/a.png" id="teacher">
-        </picture>
-      </div>
     </div>
-
-
-    <div class="column title has-text-centered">
-      <div class="mail_cv">
-        If you want to work in any of the positions mentioned above, please send us your CV with subject <span class="subject">YOUR NAME_POSITION APPLYING FOR</span> along with a decent mail answering <span class="subject">"why do you want to work with Elucidation Today?"</span><br><br>Confused about positions? Not knowing, in which area to work? Don't worry! Still send us your CV replacing position with <span class="subject">"GENERAL APPLICATION"</span>.<br>
-        <div class="mailto"><a href="mailto:contact@elucidationtoday.com"><i class="fas fa-pencil-alt"></i>&nbsp;Write a mail</a></div>
-      </div>
-      <p>WORK AND BE YOURSELF !</p>
+    <div class="column is-2 tc-img">
+      <picture>
+        <source type="image/webp" srcset="static/webp_images/careers/a.webp">
+        <source type="image/png" srcset="static/images/careers/a.png">
+        <img src="static/images/careers/a.png">
+      </picture>
+    </div>
     </div>
   </section>
+
+<section class="apply-book">
+  <div class="scene">
+  <article class="book">
+    <section class="page active">
+      <div class="front">
+        <h1>How To Apply?</h1>
+        <p>Click to turn page</p>
+        <div class="manual">
+          <p>Your cute little manual&nbsp;📖</p>
+        </div>
+      </div>
+      <div class="back">
+        <h1>– 1 –</h1>
+        <p>If you want to work in any of the positions mentioned above, please send us your CV with subject <span class="subject">YOUR NAME_POSITION APPLYING FOR</span> along with a decent mail answering <span class="subject">"why do you want to work with Elucidation Today?"</span></p>
+      </div>
+    </section>
+    <section class="page">
+      <div class="front">
+        <h1>– 2 –</h1>
+        <p>TO : CONTACT@ELUCIDATIONTODAY.COM<br>SUBJECT: YOUR NAME_POSITION APPLYING FOR<br><br>
+          MAIL BODY CONTAINING "WHY DO YOU WANT TO WORK WITH ELUCIDATION TODAY?"
+        </p>
+      </div>
+      <div class="back">
+        <h1>– 3 –</h1>
+        <p>Confused about positions? Not knowing, in which area to work? Don't worry! Still send us your CV replacing position with <span class="subject">"GENERAL APPLICATION"</span>.<br></p>
+      </div>
+    </section>
+      <section class="page">
+      <div class="front">
+        <h1>– 4 –</h1>
+        <p>TO : CONTACT@ELUCIDATIONTODAY.COM<br>SUBJECT: YOUR NAME_GENERAL APPLICATION<br><br>
+          MAIL BODY CONTAINING "WHY DO YOU WANT TO WORK WITH ELUCIDATION TODAY?"
+        </p>
+      </div>
+      <div class="back">
+        <h1>– 5 –</h1>
+        <p>
+          Write a mail now 👉<br>
+          Or save the email id for later.
+        </p>
+      </div>
+    </section>
+    <div class="mailto">
+      <a href="mailto:contact@elucidationtoday.com"><i class="fas fa-pencil-alt"></i>&nbsp;Write a mail</a>
+      <div class="copyEmail tooltip"><p id="emailText">contact@elucidationtoday.com</p>&nbsp;<i class="far fa-clone" onmouseout="tooltip()" onclick="copyEmail()"></i><span class="tooltiptext" id="myTooltip">Copy to clipboard</span></div>
+    </div>
+  </article>
+</div>
+</section>
+<div class="work-line comm has-text-centered">
+  <p>WORK AND BE YOURSELF !</p>
+</div>
+
+
+
+
 
   <footer class="footer has-background-dark" data-aos="fade-in">
     <div class="columns is-vcentered">
@@ -282,10 +333,62 @@
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-hammerjs@2.0.0/jquery.hammer.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script type="text/javascript" src="static/js/elucidation.js"></script>
 
+
+
+
+<script type="text/javascript">
+function copyEmail() {
+  var copyText = document.getElementById("emailText");
+  temp_input = $('<input>').val($(copyText).html()).appendTo('body');
+  temp_input.select();
+  /* // for existing input element 
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  */
+  document.execCommand("copy");
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied";// + temp_input[0].value;
+  $(temp_input).remove();
+}
+function tooltip() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
+<script type="text/javascript">
+  var currentPage = 0;
+
+$('.book')
+.on('click', '.active', nextPage)
+.on('click', '.flipped', prevPage);
+
+$('.book').hammer().on("swipeleft", nextPage);
+$('.book').hammer().on("swiperight", prevPage);
+
+function prevPage() {
+  $('.flipped')
+    .last()
+    .removeClass('flipped')
+    .addClass('active')
+    .siblings('.page')
+    .removeClass('active');
+}
+
+function nextPage() {
+  $('.active')
+    .removeClass('active')
+    .addClass('flipped')
+    .next('.page')
+    .addClass('active')
+    .siblings();  
+}
+</script>
 <script type="text/javascript">
 AOS.init();
 </script>
