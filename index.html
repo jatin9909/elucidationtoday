@@ -36,7 +36,7 @@
   <body>
   	<div id="page_loader">
 	</div>
-
+	<!-- START NAVBAR -->
   	<nav class="navbar is-fixed-top is-transparent">
   		<div class="container">
 	  		<div class="navbar-brand">
@@ -90,18 +90,39 @@
                             <a class="services-link navbar-item" href="careers">Work With Us</a>
                             <a class="services-link navbar-item" href="mentors">Mentors</a>
                             <a class="services-link navbar-item " href="index#contact">Contact</a>
-
                         </div>
                     </div>
 		 			
 	 		    </div>
 
   			</div>
+  			<div class="logo-mobile">
+  			<a href="index">
+  				<picture>
+				  <source type="image/webp" srcset="static/webp_images/logo.webp">
+				  <source type="image/png" srcset="static/images/logo.png">
+				  <img src="static/images/logo.png">
+				</picture>
+			</a>
+  			</div>
   		</div>
-
-  		
-  		
 	</nav>
+	<div class="navigation-bar">
+	  <div class="nav-row">
+	    <a href="index"><div class="nav-column"><i class="fas fa-home"></i></div></a>
+	    <a href="about-us"><div class="nav-column"><i class="fas fa-info-circle"></i></div></a>
+	    <a href="services"><div class="nav-column"><i class="fas fa-clipboard-list"></i></div></a>
+	    <a href="index#contact"><div class="nav-column"><i class="fas fa-phone"></i></div></a>
+    	<div class="nav-column" onclick="openMobileMenu(this)">
+    		<i class="fas fa-bars"></i>
+	       	<div class="mobile-menu">
+	            <a href="blog">Blogs</a>
+	            <a href="careers">Work With Us</a>
+	            <a href="mentors">Mentors</a>
+		   	</div>
+		</div>
+	  </div>
+	</div>
 	<!--END NAVBAR-->
 	<section class="hero is-medium is-main">
 		<div class="hero-body">
@@ -130,11 +151,11 @@
 	<!--END HERO-->
 	<section class="section intro">
 		<div class="container has-text-centered">
-			<div class="column is-8 is-offset-2">
+		  <div class="column is-8 is-offset-2">
 			<h1 class="title" data-aos="fade-up">
 				We're committed to making you employable, aware and skilled.
 			</h1>
-			</div>
+		  </div>
 		</div>
 		<br>
 		<br>
@@ -176,8 +197,8 @@
 					<figure class="image illust">
 						<picture>
 						  <source type="image/webp" srcset="static/webp_images/success-bw.webp">
-						  <source type="image/png" srcset="static/images/sucess-bw.png">
-						  <img src="static/images/sucess-bw.png">
+						  <source type="image/png" srcset="static/images/success-bw.png">
+						  <img src="static/images/success-bw.png">
 						</picture>
 					</figure>
 				</div>
@@ -294,8 +315,8 @@
 						<figure class="image is-128x128">
 							<picture>
 							  <source type="image/webp" srcset="static/webp_images/colleges/patkar-varde.webp">
-							  <source type="image/jpeg" srcset="static/images/colleges/patkar-varde.jpg">
-							  <img src="static/images/colleges/patkar-varde.jpg">
+							  <source type="image/png" srcset="static/images/colleges/patkar-varde.png">
+							  <img src="static/images/colleges/patkar-varde.png">
 							</picture>
 						</figure>
 						<ul>
@@ -354,8 +375,8 @@
 						<figure class="image is-128x128">
 							<picture>
 							  <source type="image/webp" srcset="static/webp_images/colleges/lsr.webp">
-							  <source type="image/jpeg" srcset="static/images/colleges/lsr.jpg">
-							  <img src="static/images/colleges/lsr.jpg">
+							  <source type="image/png" srcset="static/images/colleges/lsr.png">
+							  <img src="static/images/colleges/lsr.png">
 							</picture>
 						</figure>
 						<ul>
@@ -399,8 +420,8 @@
 						<figure class="image is-128x128">
 							<picture>
 							  <source type="image/webp" srcset="static/webp_images/colleges/dav.webp">
-							  <source type="image/jpeg" srcset="static/images/colleges/dav.jpg">
-							  <img src="static/images/colleges/dav.jpg">
+							  <source type="image/png" srcset="static/images/colleges/dav.png">
+							  <img src="static/images/colleges/dav.png">
 							</picture>
 						</figure>
 						<ul>

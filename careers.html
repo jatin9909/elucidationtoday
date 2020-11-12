@@ -93,8 +93,34 @@
         </div>
 
       </div>
+        <div class="logo-mobile">
+        <a href="index">
+          <picture>
+          <source type="image/webp" srcset="static/webp_images/logo.webp">
+          <source type="image/png" srcset="static/images/logo.png">
+          <img src="static/images/logo.png">
+        </picture>
+      </a>
+        </div>
+
     </div>
   </nav>
+  <div class="navigation-bar">
+    <div class="nav-row">
+      <a href="index"><div class="nav-column"><i class="fas fa-home"></i></div></a>
+      <a href="about-us"><div class="nav-column"><i class="fas fa-info-circle"></i></div></a>
+      <a href="services"><div class="nav-column"><i class="fas fa-clipboard-list"></i></div></a>
+      <a href="index#contact"><div class="nav-column"><i class="fas fa-phone"></i></div></a>
+      <div class="nav-column" onclick="openMobileMenu(this)">
+        <i class="fas fa-bars"></i>
+          <div class="mobile-menu">
+              <a href="blog">Blogs</a>
+              <a class="active" href="careers">Work With Us</a>
+              <a href="mentors">Mentors</a>
+        </div>
+    </div>
+    </div>
+  </div>
 
 
 

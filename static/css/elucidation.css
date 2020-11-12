@@ -109,7 +109,15 @@
       height: 40px;
       max-height: none;
     }
-
+    .logo-mobile{
+      text-align: left;
+      display: none;
+    }
+    .logo-mobile img{
+      margin-top: 5px;
+      margin-left: 5px;
+      height: 40px;
+    }
 
     	.navbar-dropdown {background-color: #FDF7E8 !important; }
 
@@ -215,6 +223,12 @@
       #press img {padding-top: 20px;}
 
 	@media(max-width: 767px) {
+        .navbar.is-fixed-top{
+          position: relative;
+        }
+        html.has-navbar-fixed-top{
+          padding: 0;
+        }
   			.custom-columns {
    				 flex-direction: column-reverse;
    				 display: flex;
@@ -224,6 +238,9 @@
         }
         .services-link {
           color: #0B4F57;
+        }
+        .logo-mobile{
+          display: block;
         }
 
 
@@ -465,6 +482,11 @@ Abhishek CSS
   margin:0 50px;
   color: #FDF7E8;
   font-size: 48px;
+}
+@media only screen and (max-width: 768px){
+  .diversity-text{
+    margin-bottom: 50px;
+  }
 }
 /* About */
 
@@ -804,7 +826,69 @@ Abhishek CSS
 
 
 
+/* Mobile Navigation */
 
+
+.navigation-bar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  z-index: 9999;
+}
+.navigation-bar .nav-row{
+  background: #0B4F57;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px -0.5px 3px #FFF;
+  margin:auto;
+}
+.navigation-bar .nav-column{
+  display: inline-block;
+  width: 18%;
+}
+.navigation-bar .svg-inline--fa{
+  font-size: 20px;
+  color: #FDF7E8;
+}
+
+.mobile-menu{
+  height: max-content;
+  padding: 20px 5px;
+  border-radius: 10px;
+  border: 1px solid #4a4a4a;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background: #FDF7E8;
+  z-index: -1;
+  transition:0.3s;
+  transform: rotateY(90deg);
+  transform-origin: right;
+  box-shadow: 2px 2px 2px #4a4a4a;
+}
+.show-mobile-menu{
+  transform: rotateY(0deg);
+  right: 10px;
+}
+/*.mobile-menu::after{
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color:#4a4a4a transparent transparent transparent;
+  bottom: -10px;
+  margin-left: -5px;
+}*/
+.mobile-menu a{
+  color: #4a4a4a;
+  display: block;
+}
+.mobile-menu a.active{
+  color: #EA526F;
+}
+/* Mobile Navigation */
 
 
 
@@ -844,9 +928,6 @@ Abhishek CSS
   .bot-icon{
     bottom:0;
   }
-  .bot-icon img{
-    height:30px;
-  }
   .bot-app{
     bottom:95px;
   }
@@ -869,6 +950,18 @@ Abhishek CSS
   }
 }
 @media only screen and (max-width: 767px){
+  .navigation-bar{
+    display: block;
+  }
+  .bot-icon, #go-to-top{
+    bottom: 50px;
+  }
+  .bot-app{
+    bottom: 170px;
+  }
+  .navbar-brand{
+    display: none;
+  }
   .diversity-gif video{
     height: 280px;
     width: 280px;

@@ -92,11 +92,39 @@
   </div>
 
 </div>
+        <div class="logo-mobile">
+        <a href="index">
+          <picture>
+          <source type="image/webp" srcset="static/webp_images/logo.webp">
+          <source type="image/png" srcset="static/images/logo.png">
+          <img src="static/images/logo.png">
+          </picture>
+        </a>
+        </div>
+
 </div>
-
-
-
 </nav>
+  <div class="navigation-bar">
+    <div class="nav-row">
+      <a href="index"><div class="nav-column"><i class="fas fa-home"></i></div></a>
+      <a href="about-us"><div class="nav-column"><i class="fas fa-info-circle"></i></div></a>
+      <a href="services"><div class="nav-column"><i class="fas fa-clipboard-list"></i></div></a>
+      <a href="index#contact"><div class="nav-column"><i class="fas fa-phone"></i></div></a>
+      <div class="nav-column" onclick="openMobileMenu(this)">
+        <i class="fas fa-bars"></i>
+          <div class="mobile-menu">
+              <a href="blog">Blogs</a>
+              <a href="careers">Work With Us</a>
+              <a class="active" href="mentors">Mentors</a>
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
 <section class="hero comm">
   <div class="hero-body has-text-centered">
     <div class="container">
@@ -270,7 +298,7 @@
 <section class="section is-main has-text-centered">
 
 
-  <div class="column is-8 is-offset-2" data-aos="fade-up" data-aos-duration="1000">
+  <div class="column is-8 is-offset-2" data-aos="fade-up">
     <div class="column is-8 is-offset-2" data-aos="fade-up">
       <h1 class="title level-item">
         Would you like to mentor students?
@@ -283,7 +311,7 @@
         <img src="static/images/mentors/round.png">
       </picture>
     </div>
-    <div class="column is-8 is-offset-2" data-aos="fade-up" data-aos-duration="2000" >
+    <div class="column is-8 is-offset-2" data-aos="fade-up">
       <a href="index#contact" class="be-mentor-link">
         <span class="column is-8 is-offset-2 comm">
           GET IN TOUCH

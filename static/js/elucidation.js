@@ -13,6 +13,10 @@ function readmore(seq) {
   }
 }
 
+function openMobileMenu(){
+  $('.mobile-menu').toggleClass('show-mobile-menu');
+}
+
 
 var btn = $('#go-to-top');
 
