@@ -69,12 +69,12 @@
       .then(response => {
       	console.log('Success!', response);
       	$("#submit").text("Thank You");
-      	setTimeout(redirect, 2000, "index.html");
+      	setTimeout(redirect, 2000, "index");
       })
       .catch(error => {
       	console.error('Error!', error.message);
       	$("#submit").text("Error");
-      	setTimeout(redirect, 2000, "snapform.html");
+      	setTimeout(redirect, 2000, "snapform");
       })
     })
 

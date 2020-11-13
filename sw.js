@@ -6,7 +6,7 @@ var preLoad = function(){
   console.log("Installing web app");
   return caches.open("index").then(function(cache) {
     console.log("caching index and important routes");
-    return cache.addAll(["/index.html", "/blog.html", "/mentors.html", "/careers.html", "/services.html", "/about-us.html"]);
+    return cache.addAll(["/index", "/blog", "/mentors", "/careers", "/services", "/about-us"]);
   });
 };
 
@@ -63,7 +63,7 @@ var returnFromCache = function(request){
   return caches.open("index").then(function (cache) {
     return cache.match(request).then(function (matching) {
      if(!matching || matching.status == 404) {
-       return cache.match("/index.html");
+       return cache.match("/index");
      } else {
        return matching;
      }
