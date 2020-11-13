@@ -2,6 +2,7 @@
 <html>
   <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<link rel="manifest" href="manifest.webmanifest">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176428633-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -823,4 +824,26 @@
           )
       });
   </script>
+  <script>
+ if (!navigator.serviceWorker.controller) {
+     navigator.serviceWorker.register("sw.js").then(function(reg) {
+         console.log("Service worker has been registered for scope: " + reg.scope);
+     });
+ }
+var alerted = localStorage.getItem('alerted') || '';
+if (alerted != 'yes') {
+Notification.requestPermission(result => {
+  if (result === 'granted') {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.showNotification('Elucidation Today', {
+        body: 'Welcome to the Elucidation Today family!',
+        icon: 'pwa/icons/icon-192.png'
+      });
+    });
+  }
+});
+ localStorage.setItem('alerted','yes');
+}
+</script>
+
 </html>

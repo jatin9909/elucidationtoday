@@ -1,0 +1,24 @@
+{
+  "short_name": "Elucidation Today",
+  "name": "Elucidation Today | Your Skill Salon",
+  "description": "Helping the youth be more aware of the opportunities that are in front of them. Promoting skill development and career mentorship for the new force.",
+  "icons": [
+    {
+      "src": "pwa/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "pwa/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#FDF7E8",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#4a949f",
+  "orientation": "any",
+  "shortcuts": []
+}
