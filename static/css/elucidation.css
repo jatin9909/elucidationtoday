@@ -840,16 +840,20 @@ Abhishek CSS
   background: #0B4F57;
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 3px 0;
   box-shadow: 0px -0.5px 3px #FFF;
   margin:auto;
+}
+.navigation-bar .nav-text{
+  font-size: 13px;
+  color: #FDF7E8;
 }
 .navigation-bar .nav-column{
   display: inline-block;
   width: 18%;
 }
 .navigation-bar .svg-inline--fa{
-  font-size: 20px;
+  font-size: 16px;
   color: #FDF7E8;
 }
 
@@ -887,6 +891,18 @@ Abhishek CSS
 }
 .mobile-menu a.active{
   color: #EA526F;
+}
+@media only screen and (max-width: 400px){
+  .navigation-bar .nav-row{
+    padding: 4px 0;
+  }
+  .navigation-bar .nav-text{
+    font-size: 11px;
+  }
+  .navigation-bar .svg-inline--fa{
+    font-size: 15px;
+  }
+
 }
 /* Mobile Navigation */
 
