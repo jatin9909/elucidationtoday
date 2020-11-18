@@ -39,7 +39,11 @@
         z-index: 999999;
         background: url(../images/logo_loader.gif) center no-repeat #FDF7E8;
       }
-
+      @media only screen and (max-width: 350px){
+        #page_loader{
+          background-size: contain;
+        }
+      }
     	.main:hover
     	{
     		animation: title-text-animate 0.5s ease-in forwards;
@@ -858,7 +862,6 @@ Abhishek CSS
 }
 
 .mobile-menu{
-  height: max-content;
   padding: 20px 5px;
   border-radius: 10px;
   border: 1px solid #4a4a4a;
