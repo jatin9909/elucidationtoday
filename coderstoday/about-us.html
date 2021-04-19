@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176428633-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-176428633-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Coders Today">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="icon" href="../static/coderstoday/images/star.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/coderstoday/css/coders.css">
+    
+    <title>About • Coders Today</title>
+  </head>
+  <body>
+  	<div id="page_loader">
+  		<div class="logo_magic"></div>
+	</div>
+	<!-- START NAVBAR -->
+  	<nav class="navbar is-fixed-top is-transparent">
+  		<div class="container">
+	  		<div class="navbar-brand">
+	  			<a class="navbar-item logo" href="index">
+					<picture>
+					  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+					  <source type="image/png" srcset="../static/coderstoday/images/coderstoday_logo.png">
+					  <img src="../static/coderstoday/images/coderstoday_logo.png" id="logo">
+					</picture>
+	  			</a>
+	  			<span class="navbar-burger burger"data-target="navbarMenuHero">
+		      		<span></span>
+		      		<span></span>
+		      		<span></span>
+	    		</span>
+	  		</div>
+	  		<div class="navbar-menu" id="navbarMenuHero">
+	  			<div class="navbar-end">
+	  				<a class="navbar-item" href="#">About Us</a>
+	  				<a class="navbar-item" href="#">Our Work</a>
+	  				<!--a class="navbar-item" href="#">F.A.Qs</a-->
+	 		    </div>
+
+  			</div>
+  			<div class="logo-mobile">
+  			<a href="index">
+  				<picture>
+				  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+				  <source type="image/png" srcset="../static/coderstoday/images/coderstoday_logo.png">
+				  <img src="../static/coderstoday/images/coderstoday_logo.png">
+				</picture>
+			</a>
+  			</div>
+  		</div>
+	</nav>
+
+	<div class="about-jumbotron">
+		<div class="highlight-text">
+			<div class="highlight-text-container">
+				<div class="bold">About Us</div>
+				<div class="light">Give shape to your imagination</div>
+			</div>
+		</div>
+		<div class="highlight-image">
+			<picture>
+			  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+			  <source type="image/png" srcset="../static/coderstoday/images/coder_girl.png">
+			  <img src="../static/coderstoday/images/coder_girl.png">
+			</picture>
+		</div>
+	</div>
+	<div class="about-us-container">
+		<div class="about-us-title">
+			What we do ?
+		</div>
+		<div class="about-us-text">
+			Coders Today is an initiative in the form of a women’s coding club to bridge the gap between our education system and corporate world.
+			<br /><br />We encourage women into coding and related fields by providing experiential learning, make women employable and entrepreneurial and thus giving space to women’s perspective in the corporate world which can revolutionize businesses.
+		</div>
+	</div>
+	<div class="explain-via-graphic">
+		<picture>
+		  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+		  <source type="image/png" srcset="../static/coderstoday/images/explain_graphic.png">
+		  <img src="../static/coderstoday/images/explain_graphic.png">
+		</picture>
+	</div>
+
+	<div class="mentors-block">
+		<div class="mentor-desc">
+			<div class="mentor-desc-title">
+				Our Mentors
+			</div>
+			<div class="mentor-desc-text">
+				Our mentors guide students in creating projects and thus make them skilled in their respective areas.
+				<br />All of our mentors are working professionals and experienced in their fields.
+			</div>
+		</div>
+		<div class="mentors-container" id="mentors-container-id">
+		</div>
+	</div>
+
+	<div class="footer-block about-footer">
+		<div class="copyright-line">
+			All rights reserved | A product of Elucidation Today
+		</div>
+	</div>
+
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="../static/coderstoday/js/coders.js"></script>
+    <script type="text/javascript">
+   (function()
+      {
+      	var burger=document.querySelector('.burger');
+      	var nav=document.querySelector('#'+burger.dataset.target);
+
+
+      	burger.addEventListener('click', function()
+      	{
+      		burger.classList.toggle('is-active');
+      		nav.classList.toggle('is-active' );
+      		
+
+
+      	});
+      })();
+
+    </script>
+</html>

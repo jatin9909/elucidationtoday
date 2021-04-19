@@ -1,0 +1,249 @@
+@font-face
+{
+  font-family: 'SF-UI-Bold';
+  src: url('../fonts/sf-ui/sf-ui-display-bold-58646a511e3d9.otf');
+}
+@font-face
+{
+  font-family: 'SF-UI-Light';
+  src: url('../fonts/sf-ui/sf-ui-display-light-58646b33e0551.otf');
+}
+@font-face
+{
+  font-family: 'SF-UI-Medium';
+  src: url('../fonts/sf-ui/sf-ui-display-medium-58646be638f96.otf');
+}
+@font-face
+{
+  font-family: 'SF-UI-SemiBold';
+  src: url('../fonts/sf-ui/sf-ui-display-semibold-58646eddcae92.otf');
+}
+@font-face
+{
+  font-family: 'SF-UI-Thin';
+  src: url('../fonts/sf-ui/sf-ui-display-thin-58646e9b26e8b.otf');
+}
+
+
+body {
+  font-family: 'SF-UI-Medium';
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+#topBar{
+  padding: 15px 0;
+  background: #FFF;
+}
+#footer {
+  height: 30px;
+  vertical-align: middle;
+  text-align: right;
+  clear: both;
+  padding-right: 3px;
+  background-color: #317082;
+  margin-top: 2px;
+  width: 790px;
+}
+#footer form {
+  margin: 0px;
+  margin-top: 2px;
+}
+#dhtmlgoodies_dragDropContainer {
+  /* Main container for this script */
+  background-color: #eee;
+  -moz-user-select: none;
+}
+#dhtmlgoodies_dragDropContainer ul {
+  /* General rules for all <ul> */
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding: 2px;
+}
+
+#dhtmlgoodies_dragDropContainer li,
+#dragContent li,
+li#indicateDestination {
+  /* Movable items, i.e. <LI> */
+  list-style-type: none;
+  text-align: center;
+  background-color: #FF9800;
+  border: 1px solid #262626;
+  color:#FFF;
+  padding: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+li#indicateDestination {
+  /* Box indicating where content will be dropped - i.e. the one you use if you don't use arrow */
+  border: 1px solid #317082;
+  background-color: #fff;
+}
+
+/* LEFT COLUMN CSS */
+div#dhtmlgoodies_listOfItems {
+  /* Left column "Available students" */
+  background: #EEE;
+  display: inline-block;
+  width:15%;
+  height: 100vh;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+#dhtmlgoodies_listOfItems ul {
+  /* Left(Sources) column <ul> */
+  height: 560px;
+}
+
+div#dhtmlgoodies_listOfItems div {
+}
+div#dhtmlgoodies_listOfItems div ul {
+  /* Left column <ul> */
+  margin-left: 10px; /* Space at the left of list - the arrow will be positioned there */
+}
+#dhtmlgoodies_listOfItems div p {
+  /* Heading above left column */
+  margin: 0px;
+  padding: 10px;
+  background-color: #FFF;
+  color: #262626;
+  margin-bottom: 5px;
+}
+/* END LEFT COLUMN CSS */
+
+#dhtmlgoodies_dragDropContainer .mouseover {
+  /* Mouse over effect DIV box in right column */
+  background-color: #e2ebed;
+  border: 1px solid #317082;
+}
+
+/* Start main container CSS */
+
+div#dhtmlgoodies_mainContainer {
+  /* Right column DIV */
+  display: inline-block;
+  width:85%;
+  height: 100vh;
+  background: #262626;
+  vertical-align: top;
+}
+#dhtmlgoodies_mainContainer div {
+  /* Parent <div> of small boxes */
+  margin-top: 0px;
+}
+#dhtmlgoodies_mainContainer div ul {
+  margin-left: 10px;
+}
+
+#dhtmlgoodies_mainContainer div p {
+  /* Heading above small boxes */
+  margin: 0px;
+  padding: 10px;
+  background-color: #FFF;
+  color: #262626;
+  margin-bottom: 5px;
+}
+
+#dhtmlgoodies_mainContainer ul {
+  /* Small box in right column ,i.e <ul> */
+  width: 152px;
+  height: 80px;
+  border: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+#dragContent {
+  /* Drag container */
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  z-index: 2000;
+}
+
+#dragDropIndicator {
+  /* DIV for the small arrow */
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  display: none;
+  z-index: 1000;
+  margin: 0px;
+  padding: 0px;
+}
+
+#dragDropIndicator img{
+  height: 20px;
+}
+
+#runCodeBtn{
+  position: absolute;
+  bottom: 50px;
+  left: 20%;
+}
+#runCodeBtn button{
+  border-radius: 5px;
+  padding: 8px 35px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+#runCodeBtn button{
+  box-shadow: 0 1px 1px rgba(255, 87, 34, 0.12), 
+  0 2px 2px rgb(255, 87, 34, 0.12), 
+  0 4px 4px rgb(255, 87, 34, 0.12), 
+  0 8px 8px rgba(255, 87, 34, 0.12),
+  0 16px 16px rgba(255, 87, 34, 0.12);
+}
+
+#runCodeBtn img{
+  height: 20px;
+  vertical-align: middle;
+}
+
+
+
+.result-block{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5,5,5,0.9);
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.result-block.visible{
+  opacity: 1;
+  z-index: 99;
+}
+.result-block .result-container{
+  margin-top: 10%;
+  z-index: 999;
+  color: white;
+  font-size: 32px;
+}
+.result-block .result-container .loading img{
+  height: 200px;
+}
+
+.result-block .result-container .reload-btn button{
+  background: white;
+  color: black;
+  font-size: 20px;
+  padding: 8px 35px;
+  margin-top: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}

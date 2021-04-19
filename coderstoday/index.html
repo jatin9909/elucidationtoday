@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176428633-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-176428633-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Coders Today">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+	<link rel="icon" href="../static/coderstoday/images/star.png">
+    
+    <link rel="stylesheet" href="../static/coderstoday/css/coders.css">
+
+    
+    <title>Home • Coders Today</title>
+  </head>
+  <body>
+  	<div id="page_loader">
+  		<div class="logo_magic"></div>
+	</div>
+	<!-- START NAVBAR -->
+  	<nav class="navbar is-fixed-top is-transparent">
+  		<div class="container">
+	  		<div class="navbar-brand">
+	  			<a class="navbar-item logo" href="index">
+					<picture>
+					  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+					  <source type="image/png" srcset="../static/coderstoday/images/coderstoday_logo.png">
+					  <img src="../static/coderstoday/images/coderstoday_logo.png" id="logo">
+					</picture>
+	  			</a>
+	  			<span class="navbar-burger burger" data-target="navbarMenuHero">
+		      		<span></span>
+		      		<span></span>
+		      		<span></span>
+	    		</span>
+	  		</div>
+	  		<div class="navbar-menu" id="navbarMenuHero">
+	  			<div class="navbar-end">
+	  				<a class="navbar-item" href="about-us">About Us</a>
+	  				<a class="navbar-item" href="#">Our Work</a>
+	  				<!--a class="navbar-item" href="#">F.A.Qs</a--> 			
+	 		    </div>
+  			</div>
+  		</div>
+	</nav>
+
+	<section class="first-section">
+		<div class="main-section-block">
+			<div class="text">Tread on the path of experiential learning</div>
+			<div class="head-text">
+				<div class="same-line">
+					<span>Clients.</span>
+					<span>Mentors.</span>
+				</div>
+				<div class="next-line">
+					<span>& Yourself.</span>
+				</div>
+			</div>
+
+			<div class="explore-btn">
+				<button class="common-button" onclick="scrollToSection('#second-section-id')">
+					Explore					
+				</button>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="second-section-id" class="second-section">
+		<div class="coding-club-block">
+			<div class="text-container">
+				<div class="text"><i class="fa fa-check"></i>&nbsp;I am a Woman.</div>
+				<div class="text"><i class="fa fa-check"></i>&nbsp;I want to learn Coding.</div>
+			</div>
+			<div class="laptop-img">
+				<picture>
+				  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+				  <source type="image/png" srcset="../static/coderstoday/images/laptop.png">
+				  <img src="../static/coderstoday/images/laptop.png">
+				</picture>
+			</div>
+
+			<div class="btn-area">
+				<button class="try-now common-button" onclick="window.open('../components/try-coding.html')">
+					Try Now
+				</button>
+				<button class="join-club common-button" onclick="window.open('https://forms.gle/BQaUgzSUEpqwRo7g8')">
+					Join this club
+				</button>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<section class="third-section">
+		<div id="stakeholders-container-id" class="stakeholders-container project">
+			<div class="blur-background">
+			</div>
+			<div class="tab-container">
+				<div class="tab-sub-container">
+					<div class="tab active" id="tab1" onclick="switchTab(this.id, 'project')">
+						<img src="../static/coderstoday/images/app.png">
+						I'm a client
+					</div>
+					<div class="tab" id="tab2" onclick="switchTab(this.id, 'mentor')">
+						<img src="../static/coderstoday/images/coach.png">
+						I'm a mentor
+					</div>
+					<div class="tab" id="tab3" onclick="switchTab(this.id,'club')">
+						<img src="../static/coderstoday/images/community.png">
+						I'm a college
+					</div>
+
+					<div class="tab-content active" id="tab1-content">
+						<div class="tab-title">I need you to make my project</div>
+						<div class="content">Any Individual/ Organization/ Company can reach out to us for any project of their requirement.</div>
+						<div class="call-to-action">
+							<button class="common-button" onclick="openPopupForm('CLIENT')">Contact</button>
+						</div>
+					</div>
+					<div class="tab-content" id="tab2-content">
+						<div class="tab-title">I want to join as a mentor</div>
+						<div class="content">Any individual with work experience in relative field can apply as a mentor</div>
+						<div class="call-to-action">
+							<button class="common-button" onclick="openPopupForm('MENTOR')">Apply Now</button>
+						</div>						
+					</div>
+					<div class="tab-content" id="tab3-content">
+						<div class="tab-title">We want this club in our college</div>
+						<div class="content">Any college / Institution can come to us for a CodersToday approved club</div>
+						<div class="call-to-action">
+							<button class="common-button" onclick="openPopupForm('COLLEGE')">Contact</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="fourth-section">
+		<div class="services-container">
+			<div class="service-title">
+				What we offer&nbsp;<span>?</span>
+			</div>
+			<div class="service-blocks">
+			<div class="blocks-container">
+				<div class="service-block">
+					<div class="service-icon">
+						<img src="../static/coderstoday/images/icons/web.png">
+					</div>
+					<div class="block-title">Web Development</div>
+					<div class="details" onclick="detailsOnHover(event)">know more</div>
+					<div class="overlay">
+    					<div class="over-text">Making of websites or making softwares that runs on web</div>
+  					</div>
+				</div>
+				<div class="service-block">
+					<div class="service-icon">
+						<img src="../static/coderstoday/images/icons/app.png">
+					</div>
+					<div class="block-title">Mobile App Development</div>
+					<div class="details" onclick="detailsOnHover(event)">know more</div>
+					<div class="overlay">
+    					<div class="over-text">Making of mobile apps that runs on Android and iOS</div>
+  					</div>
+				</div>
+				<div class="service-block">
+					<div class="service-icon">
+						<img src="../static/coderstoday/images/icons/graphic_design.png">
+					</div>
+					<div class="block-title">Graphic Designing</div>
+					<div class="details" onclick="detailsOnHover(event)">know more</div>
+					<div class="overlay">
+    					<div class="over-text">It is all about communicating a thought via design</div>
+  					</div>
+				</div>
+			</div>
+			<div class="blocks-container">
+				<div class="service-block">
+					<div class="service-icon">
+						<img src="../static/coderstoday/images/icons/ui_ux.png">
+					</div>
+					<div class="block-title">UI/UX Designing</div>
+					<div class="details" onclick="detailsOnHover(event)">know more</div>
+					<div class="overlay">
+    					<div class="over-text">It is about creating a design for a software that makes it easy for a user to use</div>
+  					</div>
+				</div>
+				<div class="service-block">
+					<div class="service-icon">
+						<img src="../static/coderstoday/images/icons/game.png">
+					</div>
+					<div class="block-title">Game Development</div>
+					<div class="details" onclick="detailsOnHover(event)">know more</div>
+					<div class="overlay">
+    					<div class="over-text">Making of video games that runs on PC and Mobile</div>
+  					</div>
+				</div>
+				<div class="service-block">
+					<div class="service-icon">
+						<img src="../static/coderstoday/images/icons/ai_ml.png">
+					</div>
+					<div class="block-title">AI/ML</div>
+					<div class="details" onclick="detailsOnHover(event)">know more</div>
+					<div class="overlay">
+    					<div class="over-text">Making a computer self sufficient</div>
+  					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="fifth-section">
+		<div class="footer-block">
+			<div class="columns is-vcentered">
+				<div class="column is-6 for-desktop left-side">
+					<div class="company-logo">
+						<picture>
+						  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+						  <source type="image/png" srcset="../static/coderstoday/images/coderstoday_white.png">
+						  <img src="../static/coderstoday/images/coderstoday_white.png" id="logo">
+						</picture>
+						<div class="company-desc">
+							Women Coding Club
+						</div>
+					</div>
+					<div class="social-icons">
+						
+					</div>
+				</div>
+				<div class="column is-6 right-side">
+					<div class="general-contact-form">
+						<form action="" name="GENERAL_FORM">
+							<fieldset id="general_fieldset">
+							<div class="form-title">Contact</div>
+							<div class="form-fields">
+								<input type="hidden" name="type" value="GENERAL">
+								<input type="text" name="name" placeholder="Full Name" class="form-input">
+								<input type="email" name="email" placeholder="Email" class="form-input">
+								<input type="subject" name="subject" placeholder="What is your query regarding?" class="form-input">
+								<textarea placeholder="Write your query in detail" class="form-input" name="description"></textarea>
+							</div>
+							<div class="form-button">
+								<button id="general_form_button">Send</button>
+							</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="footer-logo-copy column is-6 for-mobile">
+					<div class="company-logo">
+						<picture>
+						  <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
+						  <source type="image/png" srcset="../static/coderstoday/images/coderstoday_white.png">
+						  <img src="../static/coderstoday/images/coderstoday_white.png" id="logo">
+						</picture>
+						<div class="company-desc">
+							Women Coding Club
+						</div>
+					</div>
+					<div class="social-icons">
+						
+					</div>
+				</div>
+			</div>
+			<div class="copyright-line">
+				All rights reserved | A product of Elucidation Today
+			</div>
+		</div>
+	</section>
+
+
+<!-- Popup Form -->
+<div class="backdrop"></div>
+<div class="popup-form">
+	<div class="popup-form-container">
+		<div class="close" onclick="closePopupForm()">&times;</div>
+		<form action="" name="POPUP_FORM" enctype="multipart/form-data">
+			<fieldset id="popup_fieldset">
+			<div class="popup-form-title"></div>
+			<div class="popup-form-fields">
+			</div>
+			<div class="popup-form-button">
+				<button id="popup_form_button"></button>
+			</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="../static/coderstoday/js/coders.js"></script>
+
+  	<script type="text/javascript">
+   (function()
+      {
+      	var burger=document.querySelector('.burger');
+      	var nav=document.querySelector('#'+burger.dataset.target);
+
+
+      	burger.addEventListener('click', function()
+      	{
+      		burger.classList.toggle('is-active');
+      		nav.classList.toggle('is-active' );
+      		
+
+
+      	});
+      })();
+
+
+  		const closePopupForm = () => {
+  			$(".backdrop").removeClass("visible");
+  			$(".popup-form").removeClass("visible");
+  		}
+
+  		const openPopupForm = (form_type) =>{
+			html = `
+				<input type="hidden" name="type" value="`+form_type+`" />
+				<input type="text" placeholder="Full Name" name="name" />
+				<input type="email" placeholder="Email" name="email" />
+				<input type="number" placeholder="Contact Number" name="phone" />
+				<input type="text" placeholder="Availability for call (Ex: Saturday, 12 April between 2-6PM)" name="availability" />
+			`;
+			$(".popup-form-title").html(form_type);
+
+
+  			if(form_type == "CLIENT"){
+				$(".popup-form-button button").html("Send");
+  				html = html + `
+  					<textarea placeholder="Give us a brief about your project" name="description"></textarea>
+  				`;
+  			}
+  			else if(form_type == "COLLEGE"){
+  				html = html + `
+  					<input type="text" placeholder="College/School/Institution Name" name="college" />
+  					<textarea placeholder="What are your requirements" name="description"></textarea>
+  				`;
+				$(".popup-form-button button").html("Apply");
+  			}
+  			else if(form_type == "MENTOR"){
+  				html = html + `
+  					<textarea placeholder="Why do you want to be a mentor?" name="description"></textarea>
+  					<input type="text" placeholder="Github Link" name="github" />
+  					<label class="cv_label" for="CV_INPUT" onclick="addFileToForm()">Upload CV</label>
+  					<input type="file" name="cv" id="CV_INPUT"/>
+					<input type="hidden" id="fileContent" name="fileContent">
+					<input type="hidden" id="fileName" name="fileName">
+  				`;
+				$(".popup-form-button button").html("Apply");
+  			}
+
+  			$(".popup-form-fields").html(html);
+  			$(".backdrop").addClass("visible");
+  			$(".popup-form").addClass("visible");
+
+  		}
+  	</script>
+</html>
