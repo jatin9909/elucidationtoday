@@ -89,7 +89,7 @@ $(document).ready(function(){
 							</div>
 							<div class="linkedin-profile">
 								<a href="`+iter['linkedin']+`" target="_blank">
-									<img src="../static/coderstoday/images/icons/linkedin.png">
+									<img src="../static/coderstoday/images/Icons/linkedin.png">
 								</a>
 							</div>
 						</div>
