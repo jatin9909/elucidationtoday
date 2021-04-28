@@ -98,7 +98,9 @@ section{
 	margin-top: -20px;
 	color: var(--black);
 }
-
+.main-section-block .head-text .next-line .color-green{
+	color: var(--green);
+}
 .main-section-block .explore-btn button{
 	margin-top: 20px;
 	border: 1px solid var(--black);
@@ -461,6 +463,13 @@ section{
     	width: 70%;
     }
 }
+@media (max-width: 1023px){
+	.navbar-menu .navbar-end a:hover::after {
+		width: 0;
+		height: 0;
+	}
+}
+
 @media (max-width: 1000px){
 	.service-blocks .service-block {
 	    width: 23%;
@@ -944,9 +953,16 @@ section{
 	background: url("../images/coderstoday_white.png") 50% 50% no-repeat fixed;
 	background-size: contain;
 	border-radius: 50%;
+/* renamed these */
 	animation: leftToRight 2s infinite;
-}
+ 	-webkit-animation: leftToRight 2s infinite;	}
 @keyframes leftToRight{
+	0% {left: 0; }
+	50% {left: 40%; }
+	100% {left: 80%; }
+}
+/* and renamed these accordingly */
+@-webkit-keyframes leftToRight {
 	0% {left: 0; }
 	50% {left: 40%; }
 	100% {left: 80%; }
