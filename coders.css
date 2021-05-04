@@ -1,0 +1,12 @@
+.container-img {
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+}
+.container-fluid {
+    padding: 100px 0px;
+}
+.navbar-brand fs-1 {
+    height: 0px;
+    width: 0px;
+}
