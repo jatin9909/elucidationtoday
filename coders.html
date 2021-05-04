@@ -10,6 +10,7 @@
             integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" type="text/css" href="coders.css" />
         <title>Document</title>
     </head>
     <body>
@@ -19,8 +20,10 @@
                     <a class="navbar-item logo" href="index">
                         <picture>
                             <!--source type="image/webp" srcset="static/webp_images/logo.webp"-->
-                            <source type="image/png" />
-                            <img src="coder.jpeg" id="logo" />
+                            <source type="logo" />
+                            <a class="navbar-brand fs-1" href="#">
+                                <img src="coder.jpeg" id="logo"
+                            /></a>
                         </picture>
                     </a>
                     <span
@@ -41,81 +44,17 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid" style="padding: 100px 0px">
+        <div class="container-fluid">
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://i.pinimg.com/originals/e5/a6/06/e5a60682df253641c4e49b9feebef3be.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://ae01.alicdn.com/kf/HTB1lWD.RVXXXXbNXpXXq6xXFXXXQ.jpg?q=60"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKQNnq_Zq976r4CBfR5abSFSLIw_hPoxyLTw&usqp=CAU"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://static.toiimg.com/photo/msid-68011533,width-96,height-65.cms"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://sc01.alicdn.com/kf/HTB1bUPkKVXXXXceXFXXq6xXFXXXX/Kai-Murukku.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://images-na.ssl-images-amazon.com/images/I/51h6XtTnVLL.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img
-                            class="img-fluid"
-                            style="object-fit: cover; height: 400px"
-                            src="https://images-na.ssl-images-amazon.com/images/I/51h6XtTnVLL.jpg"
-                            alt=""
-                        />
-                    </div>
-                </div>
+                <div class="row g-4" id="img-container"></div>
             </div>
         </div>
-        <div class="container" style="padding: 5px 0px"></div>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
             crossorigin="anonymous"
         ></script>
+        <script src="coders.js"></script>
     </body>
 </html>
