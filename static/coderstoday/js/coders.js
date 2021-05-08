@@ -40,30 +40,6 @@ const mentors = [{
 	"designation": 'Java Developer',
 	"webp_image": "",
 	"linkedin": 'https://www.linkedin.com/in/deepa-rohilla-158422185/'
-},
-{
-	"name": 'Shreya Pandey',
-	"image": '../static/coderstoday/images/mentors/shreya_pandey.jpeg',
-	"image_type": 'jpg',
-	"designation": 'MERN Stack Developer',
-	"webp_image": "",
-	"linkedin": 'https://www.linkedin.com/in/shreya-kumari-pandey-4b7b6214b/'
-},
-{
-	"name": 'Raghav Saini',
-	"image": '../static/coderstoday/images/mentors/raghav_saini.jpg',
-	"image_type": 'jpg',
-	"designation": 'UI/UX Developer',
-	"webp_image": "",
-	"linkedin": 'https://www.linkedin.com/in/raghav-saini/'
-},
-{
-	"name": 'Jagjeet Gandhi',
-	"image": '../static/coderstoday/images/mentors/jagjeet_gandhi.jpg',
-	"image_type": 'jpg',
-	"designation": 'iOS Developer',
-	"webp_image": "",
-	"linkedin": 'https://www.linkedin.com/in/jagjeet-gandhii/'
 }];
 
 
