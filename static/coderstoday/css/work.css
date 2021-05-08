@@ -1,0 +1,9 @@
+.container-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.container-fluid {
+    padding: 100px 0px;
+}
