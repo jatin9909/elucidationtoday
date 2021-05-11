@@ -89,7 +89,7 @@ function display_all(result){
   var link_col=1;
   var html = '';
   var html_object = '';
-  var blog_detail_prefix = '/blog-details.html?blog=';
+  var blog_detail_prefix = '/blog-details?blog=';
     for(var row=1;row<len;row++){
       try{
       var blog_slug = result.values[row][link_col].split('/')[result.values[row][link_col].split('/').length-1];
